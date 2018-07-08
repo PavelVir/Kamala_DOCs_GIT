@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.6">
+	<Item id="783e2d0f-42ed-4384-ab6f-9a524d4e7d07">
+		<Name>НастройкиУчета</Name>
+		<Code/>
+		<Description>Настройки учета</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="145d154e-8462-41cd-a2b0-29707a8e6c15">
+				<Name>Настройка1</Name>
+				<Code/>
+				<Description>Настройка1</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>10</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="35ccc0e7-6168-4d65-804f-2d127e181abe">
+				<Name>ЧислоДней</Name>
+				<Code/>
+				<Description>Число дней</Description>
+				<Type>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>15</v8:Digits>
+						<v8:FractionDigits>2</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f3b89dee-3233-4b92-97f8-fdd1a21504e9">
+		<Name>Обмены</Name>
+		<Code/>
+		<Description>Обмены</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="b2a01202-b221-4f2e-b3a3-4a8377701762">
+				<Name>ВебСервис</Name>
+				<Code/>
+				<Description>Веб сервис</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>255</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0f79fe48-cda9-4b57-b64c-e267127ada90">
+				<Name>ИспользуемЗагрузкуПрайсов</Name>
+				<Code/>
+				<Description>Используем загрузку прайс</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e45c604a-1316-4120-8104-b2743a3797f3">
+				<Name>КонтрагентМагазинПоУмолчанию</Name>
+				<Code/>
+				<Description>Контрагент магазин (по умолч)</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>50</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

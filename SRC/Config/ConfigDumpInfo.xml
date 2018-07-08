@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.6">
+	<ConfigVersions>
+		<Metadata name="ChartOfCharacteristicTypes.с_Настройки" id="e39bec2a-92da-4f6b-9159-37cd51601f46" configVersion="626e647163aa054398968f3a4409cfb100000000"/>
+		<Metadata name="ChartOfCharacteristicTypes.с_Настройки.Predefined" id="e39bec2a-92da-4f6b-9159-37cd51601f46.7" configVersion="b2f5aa51e51320478f958e005355bf7100000000"/>
+		<Metadata name="CommonModule.с_ДокументыОбработкаПроведения" id="4ec32ba0-38c8-475c-bb10-b33457a65cf6" configVersion="5cea608627dfa7448f6df71a78d01e3800000000"/>
+		<Metadata name="CommonModule.с_ДокументыОбработкаПроведения.Module" id="4ec32ba0-38c8-475c-bb10-b33457a65cf6.0" configVersion="9ba0d2ee838241449795a2d7b72d9f3200000000"/>
+		<Metadata name="CommonModule.с_ОбщегоНазначенияВызовСервера" id="c5a99398-8bd2-456f-b7ef-7c564d3e2215" configVersion="e5d5106da9126743ae0c9819f0b3f3e200000000"/>
+		<Metadata name="CommonModule.с_ОбщегоНазначенияВызовСервера.Module" id="c5a99398-8bd2-456f-b7ef-7c564d3e2215.0" configVersion="f01307a69330264380db4b5e3fa2454b00000000"/>
+		<Metadata name="CommonModule.с_ОбщегоНазначенияКлиент" id="4519c578-394a-4bb4-9779-0575fb6f4b9e" configVersion="81fbfe3b098a5f4a811843d5556b8bfe00000000"/>
+		<Metadata name="CommonModule.с_ОбщегоНазначенияКлиент.Module" id="4519c578-394a-4bb4-9779-0575fb6f4b9e.0" configVersion="b20dd38ec1d12d448d259768b6dab1e500000000"/>
+		<Metadata name="CommonModule.с_ОбщегоНазначенияСервер" id="48a4e0d9-cc12-4a1d-850e-1b4aa9f9ae0d" configVersion="2e8f3c9c3e40fe4ca0ce974177312e2300000000"/>
+		<Metadata name="CommonModule.с_ОбщегоНазначенияСервер.Module" id="48a4e0d9-cc12-4a1d-850e-1b4aa9f9ae0d.0" configVersion="7cf44b14a86ff947935460775248770d00000000"/>
+		<Metadata name="CommonModule.с_ПовторноеИспользование" id="9d02fa78-b43e-4e74-a9be-0c8adea2d0cb" configVersion="08257de71a1bad4cb9cf2237fd3a956f00000000"/>
+		<Metadata name="CommonModule.с_ПовторноеИспользование.Module" id="9d02fa78-b43e-4e74-a9be-0c8adea2d0cb.0" configVersion="1f392f39e0179049b260621b1826981e00000000"/>
+		<Metadata name="CommonModule.с_Привегилированный" id="08916de0-73b2-48d6-9c90-18ac67cc9268" configVersion="e5593f63b4fa7c4096f0bbf9a4b1921c00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="d041a384-1455-49a1-b396-278b1ced942f" configVersion="2c0cadd0d0505043a733b12e92cf35c300000000"/>
+		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="b91839a9-2832-4a2b-ab8e-6eb522ae8042.6" configVersion="8e30a293ae9e5c4eb11ee5a838342f8d00000000"/>
+		<Metadata name="Constant.c_ИмяРабочейБазы" id="50208088-314c-4185-ab9f-d18b37694631" configVersion="d8388d326822014c8b31f6ca78fea10800000000"/>
+		<Metadata name="DataProcessor.с_ИнициализацияЗначений" id="897fb2dc-62b2-4f8b-9b0d-124e6c6e3dcc" configVersion="c07079d76b7fc04fb878fa20b280bfd500000000"/>
+		<Metadata name="DataProcessor.с_ИнициализацияЗначений.Form.Форма" id="e7f6cfdb-1bf4-4f18-9445-d83a604e8fe0" configVersion="693c5d512afcfd4e8eeb4c76b719258500000000"/>
+		<Metadata name="DataProcessor.с_ИнициализацияЗначений.Form.Форма.Form" id="e7f6cfdb-1bf4-4f18-9445-d83a604e8fe0.0" configVersion="6110b809b2939e4fb3c2e5d18b7492cc00000000"/>
+		<Metadata name="DataProcessor.с_ИнициализацияЗначений.ManagerModule" id="897fb2dc-62b2-4f8b-9b0d-124e6c6e3dcc.2" configVersion="6becf5c43324f54a868d6300d7877f5700000000"/>
+		<Metadata name="Document.сТест" id="df837e56-7056-4bef-9d3f-62d38a69e6de" configVersion="4bfffa6f907af3468134eac46b7c392200000000"/>
+		<Metadata name="EventSubscription.с_ДокументыОбработкаПроведения" id="56e825a2-ee7c-45ae-8b0d-5f97a96bef5b" configVersion="203fe61e9c78b749972ba256b88d5d0c00000000"/>
+		<Metadata name="InformationRegister.с_ВерсииВыполненнойИнициализации" id="27becbc1-c7d2-4dd6-a45b-31276e57eb8d" configVersion="a09752464978bc4d946b4c28b745183300000000">
+			<Metadata name="InformationRegister.с_ВерсииВыполненнойИнициализации.Dimension.НомерДействия" id="2417d210-e1e9-4fc4-8d0a-8462a0c05f01"/>
+			<Metadata name="InformationRegister.с_ВерсииВыполненнойИнициализации.Resource.Версия" id="6b097878-a9a3-4320-98f6-99bb8571f95f"/>
+		</Metadata>
+		<Metadata name="InformationRegister.с_ВерсииВыполненнойИнициализации.Form.ФормаСписка" id="4b020000-468d-4231-b5c8-5d222d5dad2c" configVersion="f943577ce8edb34788505410cb8a920a00000000"/>
+		<Metadata name="InformationRegister.с_ВерсииВыполненнойИнициализации.Form.ФормаСписка.Form" id="4b020000-468d-4231-b5c8-5d222d5dad2c.0" configVersion="7543bd039e8bb74fa9ea7865e841629600000000"/>
+		<Metadata name="InformationRegister.с_Настройки" id="690ecb00-ee42-4cab-bacd-b112d7320841" configVersion="c57eadadeab44c45845d8d81e21c951e00000000">
+			<Metadata name="InformationRegister.с_Настройки.Resource.Значение" id="62202f41-f636-42fa-8932-1bfdd5e785af"/>
+			<Metadata name="InformationRegister.с_Настройки.Dimension.Организация" id="a3664cff-88dc-4744-929e-080c9750c403"/>
+			<Metadata name="InformationRegister.с_Настройки.Dimension.Настройка" id="ddc623e4-ead5-4116-882c-d1d20db383c0"/>
+		</Metadata>
+		<Metadata name="InformationRegister.с_Настройки.ManagerModule" id="690ecb00-ee42-4cab-bacd-b112d7320841.2" configVersion="49c176d048d2854a8a79565ed34f9d7200000000"/>
+		<Metadata name="Language.Русский" id="c85fa2e2-3237-4781-ac42-d104a893ea88" configVersion="c643cf043c814346b5c07777b66ae0cd00000000"/>
+		<Metadata name="Role.ПолныеПрава" id="cdf8ce50-555d-4432-9eb6-02dafebb829d" configVersion="cd91116015214c4d999a67ae4f0250b100000000"/>
+		<Metadata name="Role.ПолныеПрава.Rights" id="cdf8ce50-555d-4432-9eb6-02dafebb829d.0" configVersion="eb71367df95ba3448134ef0dc5ea8e2400000000"/>
+		<Metadata name="Subsystem.с_Инициализация" id="a46a8522-755c-4dca-bc0c-6784dbbd5807" configVersion="765ee5dc8f22a04ab91c93684481442800000000"/>
+		<Metadata name="Subsystem.с_ХранениеНастроек" id="8a81b391-b009-4486-bbd5-522196cb46cf" configVersion="d16d40064d0ddd429c4c99530cd4b89500000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
