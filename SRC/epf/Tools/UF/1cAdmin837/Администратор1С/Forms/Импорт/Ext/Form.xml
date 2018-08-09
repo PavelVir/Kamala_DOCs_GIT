@@ -1,0 +1,3248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>ИМПОРТ ДАННЫХ 8.Х. БАЗОВЫЙ ФУНКЦИОНАЛ</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполнения</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ИмпортКонфигурацииИсточникаИПриемника" id="718">
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>#0000FF</TextColor>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИСТОЧНИК =&gt; ПРИЕМНИК</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ИмпортКонфигурацииИсточникаИПриемникаКонтекстноеМеню" id="719"/>
+			<ExtendedTooltip name="ИмпортКонфигурацииИсточникаИПриемникаРасширеннаяПодсказка" id="2212"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаИмпортВЕРХ" id="501">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа импорт ВЕРХ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа импорт ВЕРХ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИмпортВЕРХРасширеннаяПодсказка" id="2213"/>
+			<ChildItems>
+				<Button name="кнИмпортУстановитьНачальныеПараметрыСоединения" id="503">
+					<Type>UsualButton</Type>
+					<SkipOnInput>true</SkipOnInput>
+					<Width>14</Width>
+					<CommandName>Form.Command.кнИмпортУстановитьНачальныеПараметрыСоединения</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="кнИмпортУстановитьНачальныеПараметрыСоединенияРасширеннаяПодсказка" id="2214"/>
+				</Button>
+				<InputField name="ИмпортТипОбъектаБД" id="2092">
+					<DataPath>ИмпортТипОбъектаБД</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип импортируемых данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной тип импортируемых данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>27</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Справочники</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Справочник</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Документы</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Документ</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ПланыВидовХарактеристик</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПланВидовХарактеристик</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ИмпортТипОбъектаБДКонтекстноеМеню" id="2093"/>
+					<ExtendedTooltip name="ИмпортТипОбъектаБДРасширеннаяПодсказка" id="2215"/>
+					<Events>
+						<Event name="OnChange">ИмпортТипОбъектаБДПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="кнИмпортТЗагружаемыхОбъектовкнИмпортFAQ" id="563">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>8</Width>
+					<CommandName>Form.Command.кнИмпортFAQ</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Help</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="кнИмпортТЗагружаемыхОбъектовкнИмпортFAQРасширеннаяПодсказка" id="2216"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтбор" id="2194">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="2217"/>
+			<ChildItems>
+				<InputField name="ИмпортОрганизацияИсточник" id="639">
+					<DataPath>ИмпортОрганизацияИсточник</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация Источника</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация во Внешней базе. Отбор данных при выполнении "Сопоставить и Заполнить"</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Wrap>false</Wrap>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceListButton>false</ChoiceListButton>
+					<ContextMenu name="ИмпортОрганизацияИсточникКонтекстноеМеню" id="640"/>
+					<ExtendedTooltip name="ИмпортОрганизацияИсточникРасширеннаяПодсказка" id="2218"/>
+					<Events>
+						<Event name="OnChange">ИмпортОрганизацияИсточникПриИзменении</Event>
+						<Event name="StartChoice">ИмпортОрганизацияИсточникНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ИмпортПериод" id="918">
+					<DataPath>ИмпортПериод</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<Width>31</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ChooseType>false</ChooseType>
+					<ChoiceListButton>false</ChoiceListButton>
+					<ContextMenu name="ИмпортПериодКонтекстноеМеню" id="919"/>
+					<ExtendedTooltip name="ИмпортПериодРасширеннаяПодсказка" id="2219"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаИмпортСтраницы" id="502">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт: Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт: Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаИмпортСтраницыРасширеннаяПодсказка" id="2220"/>
+			<ChildItems>
+				<Page name="СтраницаИмпортНастройка" id="511">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа Импорт: Страница Соединение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СтраницаИмпортНастройкаРасширеннаяПодсказка" id="2221"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИмпортСоединение" id="532">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа импорт соединение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа импорт соединение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИмпортСоединениеРасширеннаяПодсказка" id="2222"/>
+							<ChildItems>
+								<RadioButtonField name="ИмпортИмяCOMСоединителя" id="629">
+									<DataPath>ИмпортИмяCOMСоединителя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>COM-соединение</v8:content>
+										</v8:item>
+									</Title>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>v.8.3</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">v83</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>v.8.2</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">v82</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>v.8.1</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">v81</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>v.8.0</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">v8</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ИмпортИмяCOMСоединителяКонтекстноеМеню" id="630"/>
+									<ExtendedTooltip name="ИмпортИмяCOMСоединителяРасширеннаяПодсказка" id="2223"/>
+									<Events>
+										<Event name="OnChange">ИмпортИмяCOMСоединителяПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<RadioButtonField name="ИмпортТипИсточника" id="514">
+									<DataPath>ИмпортВариантРаботыВнешнейИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип базы данных</v8:content>
+										</v8:item>
+									</Title>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Файл</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Файл</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Клиент-Сервер</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Клиент_Сервер</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ИмпортТипИсточникаКонтекстноеМеню" id="515"/>
+									<ExtendedTooltip name="ИмпортТипИсточникаРасширеннаяПодсказка" id="2224"/>
+									<Events>
+										<Event name="OnChange">ИмпортТипВнешнейБДПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<InputField name="ИмпортКаталогБазы" id="533">
+									<DataPath>ИмпортКаталогБазы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Каталог внешней базы</v8:content>
+										</v8:item>
+									</Title>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>false</OpenButton>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ChoiceListButton>false</ChoiceListButton>
+									<ContextMenu name="ИмпортКаталогБазыКонтекстноеМеню" id="534"/>
+									<ExtendedTooltip name="ИмпортКаталогБазыРасширеннаяПодсказка" id="2225"/>
+									<Events>
+										<Event name="StartChoice">ИмпортКаталогВнешнейБДНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмпортИмяСервера" id="516">
+									<DataPath>ИмпортИмяСервера</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя Сервера 1С</v8:content>
+										</v8:item>
+									</Title>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ИмпортИмяСервераКонтекстноеМеню" id="517"/>
+									<ExtendedTooltip name="ИмпортИмяСервераРасширеннаяПодсказка" id="2226"/>
+									<Events>
+										<Event name="OnChange">ИмпортИмяСервераПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмпортИмяБазыНаСервере" id="518">
+									<DataPath>ИмпортИмяБазыНаСервере</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя Базы на Сервере</v8:content>
+										</v8:item>
+									</Title>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ИмпортИмяБазыНаСервереКонтекстноеМеню" id="519"/>
+									<ExtendedTooltip name="ИмпортИмяБазыНаСервереРасширеннаяПодсказка" id="2227"/>
+									<Events>
+										<Event name="OnChange">ИмпортИмяБазыНаСервереПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмпортПользователь" id="520">
+									<DataPath>ИмпортПользователь</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ИмпортПользовательКонтекстноеМеню" id="521"/>
+									<ExtendedTooltip name="ИмпортПользовательРасширеннаяПодсказка" id="2228"/>
+									<Events>
+										<Event name="OnChange">ИмпортПользовательПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмпортПароль" id="522">
+									<DataPath>ИмпортПароль</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<PasswordMode>true</PasswordMode>
+									<AutoMarkIncomplete>false</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ИмпортПарольКонтекстноеМеню" id="523"/>
+									<ExtendedTooltip name="ИмпортПарольРасширеннаяПодсказка" id="2229"/>
+									<Events>
+										<Event name="OnChange">ИмпортПарольПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаИмпортСоединениеАутентификацияИПроверкаСоединения" id="565">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: "Параметры, МД и Аутентификация Windows"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: "Параметры, МД и Аутентификация Windows"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИмпортСоединениеАутентификацияИПроверкаСоединенияРасширеннаяПодсказка" id="2230"/>
+									<ChildItems>
+										<CheckBoxField name="ИмпортАутентификацияWindows" id="524">
+											<DataPath>ИмпортАутентификацияWindows</DataPath>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИмпортАутентификацияWindowsКонтекстноеМеню" id="525"/>
+											<ExtendedTooltip name="ИмпортАутентификацияWindowsРасширеннаяПодсказка" id="2231"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИмпортПодключениеИПодключеннаяКонфигурация" id="696">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: "Подключение и подключенная Конфигурация"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: "Подключение и подключенная Конфигурация"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИмпортПодключениеИПодключеннаяКонфигурацияРасширеннаяПодсказка" id="2232"/>
+									<ChildItems>
+										<Button name="кнИмпортПодключитьсяКВнешнемуИсточнику" id="535">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<SkipOnInput>true</SkipOnInput>
+											<Width>14</Width>
+											<CommandName>Form.Command.кнИмпортПодключитьсяКВнешнемуИсточнику</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.CreateInitialImage</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подключиться</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="кнИмпортПодключитьсяКВнешнемуИсточникуРасширеннаяПодсказка" id="2233"/>
+										</Button>
+										<LabelDecoration name="ИмпортСостояниеПодключения" id="581">
+											<Width>45</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Соединение отсутствует</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>СостояниеПодключения</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="ИмпортСостояниеПодключенияКонтекстноеМеню" id="582"/>
+											<ExtendedTooltip name="ИмпортСостояниеПодключенияРасширеннаяПодсказка" id="2234"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="кнИмпортОтключитьсяОтВнешнегоИсточника" id="566">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<SkipOnInput>true</SkipOnInput>
+									<Width>14</Width>
+									<CommandName>Form.Command.кнИмпортОтключитьсяОтВнешнегоИсточника</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Stop</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отключиться</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="кнИмпортОтключитьсяОтВнешнегоИсточникаРасширеннаяПодсказка" id="2235"/>
+								</Button>
+								<UsualGroup name="ГруппаИмпортПараметры" id="659">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа импорт параметры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа импорт параметры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИмпортПараметрыРасширеннаяПодсказка" id="2236"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаИмпортПараметрыГруппа1" id="1485">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИмпортПараметрыГруппа1РасширеннаяПодсказка" id="2237"/>
+											<ChildItems>
+												<CheckBoxField name="ИмпортАрхивнаяКопияБазы" id="526">
+													<DataPath>Объект.ИмпортАрхивнаяКопияБазы</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Архивная копия базы</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Источник - Сохраненная копия текущей базы: Устанавливать соответствие по GUID</v8:content>
+														</v8:item>
+													</ToolTip>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортАрхивнаяКопияБазыКонтекстноеМеню" id="527"/>
+													<ExtendedTooltip name="ИмпортАрхивнаяКопияБазыРасширеннаяПодсказка" id="2238"/>
+													<Events>
+														<Event name="OnChange">ИмпортАрхивнаяКопияБазыПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ИмпортИспользоватьGUIDИсточника" id="624">
+													<DataPath>Объект.ИмпортИспользоватьGUIDИсточника</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Использовать GUID источника</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Синхронизация с "чужим" Внешним источником: Использовать GUID источника при создании новых объектов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортИспользоватьGUIDИсточникаКонтекстноеМеню" id="625"/>
+													<ExtendedTooltip name="ИмпортИспользоватьGUIDИсточникаРасширеннаяПодсказка" id="2239"/>
+													<Events>
+														<Event name="OnChange">ИмпортИспользоватьGUIDИсточникаПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ИмпортУчитыватьДатуСозданияОбъекта" id="634">
+													<DataPath>Объект.ИмпортУчитыватьДатуСозданияОбъекта</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Учитывать дату создания</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Учитывать дату создания элемента справочника</v8:content>
+														</v8:item>
+													</ToolTip>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортУчитыватьДатуСозданияОбъектаКонтекстноеМеню" id="635"/>
+													<ExtendedTooltip name="ИмпортУчитыватьДатуСозданияОбъектаРасширеннаяПодсказка" id="2240"/>
+													<Events>
+														<Event name="OnChange">ИмпортУчитыватьДатуСозданияОбъектаПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаИмпортПараметрыГруппа2" id="1487">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИмпортПараметрыГруппа2РасширеннаяПодсказка" id="2241"/>
+											<ChildItems>
+												<CheckBoxField name="ИмпортИзменятьПодчиненные" id="688">
+													<DataPath>Объект.ИмпортИзменятьПодчиненные</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Изменять подчиненные</v8:content>
+														</v8:item>
+													</Title>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортИзменятьПодчиненныеКонтекстноеМеню" id="689"/>
+													<ExtendedTooltip name="ИмпортИзменятьПодчиненныеРасширеннаяПодсказка" id="2242"/>
+												</CheckBoxField>
+												<CheckBoxField name="ИмпортЗаменятьПустымиЗначениями" id="720">
+													<DataPath>Объект.ИмпортЗаменятьПустымиЗначениями</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>"Пустыми"</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заменять "Пустыми" значениями, т.е. незаполненными. "Блокированные" реквизиты - не изменяются на "Пустое" при любом состоянии флажка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортЗаменятьПустымиЗначениямиКонтекстноеМеню" id="721"/>
+													<ExtendedTooltip name="ИмпортЗаменятьПустымиЗначениямиРасширеннаяПодсказка" id="2243"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИмпортФИЛЬТР" id="649">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительный фильтр Сопоставления:</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИмпортФИЛЬТРРасширеннаяПодсказка" id="2244"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИмпортМетаданные" id="699">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метаданные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопоставление метаданных Источника и Приемника</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИмпортМетаданныеРасширеннаяПодсказка" id="2245"/>
+					<ChildItems>
+						<Table name="ИмпортТМетаданныеИсточникаПриемника" id="700">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаКонтекстноеМеню" id="701"/>
+							<AutoCommandBar name="ИмпортТМетаданныеИсточникаПриемникаКоманднаяПанель" id="702">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаРасширеннаяПодсказка" id="2246"/>
+							<SearchStringAddition name="ИмпортТМетаданныеИсточникаПриемникаСтрокаПоиска" id="2247">
+								<AdditionSource>
+									<Item>ИмпортТМетаданныеИсточникаПриемника</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаСтрокаПоискаКонтекстноеМеню" id="2248"/>
+								<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаСтрокаПоискаРасширеннаяПодсказка" id="2249"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИмпортТМетаданныеИсточникаПриемникаСостояниеПросмотра" id="2250">
+								<AdditionSource>
+									<Item>ИмпортТМетаданныеИсточникаПриемника</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаСостояниеПросмотраКонтекстноеМеню" id="2251"/>
+								<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаСостояниеПросмотраРасширеннаяПодсказка" id="2252"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИмпортТМетаданныеИсточникаПриемникаУправлениеПоиском" id="2253">
+								<AdditionSource>
+									<Item>ИмпортТМетаданныеИсточникаПриемника</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаУправлениеПоискомКонтекстноеМеню" id="2254"/>
+								<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаУправлениеПоискомРасширеннаяПодсказка" id="2255"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ИмпортТМетаданныеИсточникаПриемникаЗагрузить" id="2191">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.Загрузить</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>И</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импортировать объекты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаЗагрузитьКонтекстноеМеню" id="2192"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаЗагрузитьРасширеннаяПодсказка" id="2256"/>
+									<Events>
+										<Event name="OnChange">ИмпортТМетаданныеИсточникаПриемникаЗагрузитьПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<PictureField name="ИмпортТМетаданныеИсточникаПриемникаКартинка" id="703">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.Картинка</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<FixingInTable>Left</FixingInTable>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаКартинкаКонтекстноеМеню" id="704"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаКартинкаРасширеннаяПодсказка" id="2257"/>
+								</PictureField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаТипОбъектаИсточника" id="705">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.КоллекцияИсточника</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаТипОбъектаИсточникаКонтекстноеМеню" id="706"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаТипОбъектаИсточникаРасширеннаяПодсказка" id="2258"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаИмяОбъектаИсточника" id="707">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.ИмяВИсточнике</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаИмяОбъектаИсточникаКонтекстноеМеню" id="708"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаИмяОбъектаИсточникаРасширеннаяПодсказка" id="2259"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаТипРеквизитаИсточника" id="709">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.ТипРеквизитаИсточника</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаТипРеквизитаИсточникаКонтекстноеМеню" id="710"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаТипРеквизитаИсточникаРасширеннаяПодсказка" id="2260"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаСвойства" id="2199">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.Свойства</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаСвойстваКонтекстноеМеню" id="2200"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаСвойстваРасширеннаяПодсказка" id="2261"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаСписокЗначенийОтбора" id="2202">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.СписокЗначенийОтбора</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаСписокЗначенийОтбораКонтекстноеМеню" id="2203"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаСписокЗначенийОтбораРасширеннаяПодсказка" id="2262"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаЗначениеОтбора" id="2196">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.ЗначениеОтбора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ChooseType>false</ChooseType>
+									<EditTextUpdate>OnValueChange</EditTextUpdate>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаЗначениеОтбораКонтекстноеМеню" id="2197"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаЗначениеОтбораРасширеннаяПодсказка" id="2263"/>
+									<Events>
+										<Event name="StartChoice">ИмпортТМетаданныеИсточникаПриемникаЗначениеОтбораНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаТипОбъектаПриемника" id="711">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.КоллекцияПриемника</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>false</OpenButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Справочники</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Справочники</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Документы</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Документы</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПланыВидовХарактеристик</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПланыВидовХарактеристик</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Перечисления</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Перечисления</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Реквизиты</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Реквизиты</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ChoiceListButton>false</ChoiceListButton>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаТипОбъектаПриемникаКонтекстноеМеню" id="712"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаТипОбъектаПриемникаРасширеннаяПодсказка" id="2264"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаИмяОбъектаПриемника" id="713">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.ИмяВПриемнике</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>true</OpenButton>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChoiceListButton>false</ChoiceListButton>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаИмяОбъектаПриемникаКонтекстноеМеню" id="714"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаИмяОбъектаПриемникаРасширеннаяПодсказка" id="2265"/>
+								</InputField>
+								<InputField name="ИмпортТМетаданныеИсточникаПриемникаТипРеквизитаПриемника" id="715">
+									<DataPath>Объект.ИмпортТМетаданныеИсточникаПриемника.ТипРеквизитаПриемника</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ИмпортТМетаданныеИсточникаПриемникаТипРеквизитаПриемникаКонтекстноеМеню" id="716"/>
+									<ExtendedTooltip name="ИмпортТМетаданныеИсточникаПриемникаТипРеквизитаПриемникаРасширеннаяПодсказка" id="2266"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИмпортЗагрузка" id="545">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница импорт загрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИмпортЗагрузкаРасширеннаяПодсказка" id="2267"/>
+					<ChildItems>
+						<Table name="ИмпортТЗагружаемыхОбъектов" id="546">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ИмпортТЗагружаемыхОбъектов</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИмпортТЗагружаемыхОбъектовКонтекстноеМеню" id="547"/>
+							<AutoCommandBar name="ИмпортТЗагружаемыхОбъектовКоманднаяПанель" id="548">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="кнИмпортСопоставитьДанныеСВнешнимИсточникомИЗаполнитьТаблицу" id="580">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>true</SkipOnInput>
+										<CommandName>Form.Command.кнИмпортСопоставитьДанныеСВнешнимИсточникомИЗаполнитьТаблицу</CommandName>
+										<ExtendedTooltip name="кнИмпортСопоставитьДанныеСВнешнимИсточникомИЗаполнитьТаблицуРасширеннаяПодсказка" id="2268"/>
+									</Button>
+									<Button name="кнИмпортУстановитьФлажки" id="561">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>true</SkipOnInput>
+										<CommandName>Form.Command.кнИмпортУстановитьФлажки</CommandName>
+										<ExtendedTooltip name="кнИмпортУстановитьФлажкиРасширеннаяПодсказка" id="2269"/>
+									</Button>
+									<Button name="кнИмпортСнятьФлажки" id="562">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>true</SkipOnInput>
+										<CommandName>Form.Command.кнИмпортСнятьФлажки</CommandName>
+										<ExtendedTooltip name="кнИмпортСнятьФлажкиРасширеннаяПодсказка" id="2270"/>
+									</Button>
+									<Button name="кнИмпортироватьДанныеИзВнешнегоИсточника" id="564">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>true</SkipOnInput>
+										<CommandName>Form.Command.кнИмпортироватьДанныеИзВнешнегоИсточника</CommandName>
+										<ExtendedTooltip name="кнИмпортироватьДанныеИзВнешнегоИсточникаРасширеннаяПодсказка" id="2271"/>
+									</Button>
+									<Button name="кнИмпортПровестиДокументы" id="682">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.кнИмпортПровестиДокументы</CommandName>
+										<ExtendedTooltip name="кнИмпортПровестиДокументыРасширеннаяПодсказка" id="2272"/>
+									</Button>
+									<Button name="кнИмпортОчиститьТаблицуЗагружаемыхОбъектов" id="695">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.кнИмпортОчиститьОчиститьТаблицуЗагружаемыхОбъектов</CommandName>
+										<ExtendedTooltip name="кнИмпортОчиститьТаблицуЗагружаемыхОбъектовРасширеннаяПодсказка" id="2273"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовРасширеннаяПодсказка" id="2274"/>
+							<SearchStringAddition name="ИмпортТЗагружаемыхОбъектовСтрокаПоиска" id="2275">
+								<AdditionSource>
+									<Item>ИмпортТЗагружаемыхОбъектов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИмпортТЗагружаемыхОбъектовСтрокаПоискаКонтекстноеМеню" id="2276"/>
+								<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовСтрокаПоискаРасширеннаяПодсказка" id="2277"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИмпортТЗагружаемыхОбъектовСостояниеПросмотра" id="2278">
+								<AdditionSource>
+									<Item>ИмпортТЗагружаемыхОбъектов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИмпортТЗагружаемыхОбъектовСостояниеПросмотраКонтекстноеМеню" id="2279"/>
+								<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="2280"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИмпортТЗагружаемыхОбъектовУправлениеПоиском" id="2281">
+								<AdditionSource>
+									<Item>ИмпортТЗагружаемыхОбъектов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИмпортТЗагружаемыхОбъектовУправлениеПоискомКонтекстноеМеню" id="2282"/>
+								<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовУправлениеПоискомРасширеннаяПодсказка" id="2283"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппа1" id="2205">
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппа1РасширеннаяПодсказка" id="2284"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовНомерСтроки" id="2095">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.НомерСтроки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовНомерСтрокиКонтекстноеМеню" id="2096"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовНомерСтрокиРасширеннаяПодсказка" id="2285"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовИмяОбъектаИсточника" id="2207">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ИмяОбъектаИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовИмяОбъектаИсточникаКонтекстноеМеню" id="2208"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовИмяОбъектаИсточникаРасширеннаяПодсказка" id="2286"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовИмяОбъектаПриемника" id="2210">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ИмяОбъектаПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовИмяОбъектаПриемникаКонтекстноеМеню" id="2211"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовИмяОбъектаПриемникаРасширеннаяПодсказка" id="2287"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаФлажки" id="685">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: "Флажки"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: "Флажки"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаФлажкиРасширеннаяПодсказка" id="2288"/>
+									<ChildItems>
+										<CheckBoxField name="ИмпортТЗагружаемыхОбъектовЗагрузить" id="2098">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.Загрузить</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузить/Провести</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовЗагрузитьКонтекстноеМеню" id="2099"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовЗагрузитьРасширеннаяПодсказка" id="2289"/>
+										</CheckBoxField>
+										<CheckBoxField name="ИмпортТЗагружаемыхОбъектовЗагружен" id="2101">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.Загружен</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовЗагруженКонтекстноеМеню" id="2102"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовЗагруженРасширеннаяПодсказка" id="2290"/>
+										</CheckBoxField>
+										<CheckBoxField name="ИмпортТЗагружаемыхОбъектовПриемникПерепроведен" id="2179">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ПриемникПерепроведен</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleTextColor>#0000FF</TitleTextColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовПриемникПерепроведенКонтекстноеМеню" id="2180"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовПриемникПерепроведенРасширеннаяПодсказка" id="2291"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаОБЪЕКТЫ" id="605">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: группа "ОБЪЕКТЫ"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: группа "ОБЪЕКТЫ"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаОБЪЕКТЫРасширеннаяПодсказка" id="2292"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовОбъектИсточник" id="2110">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ОбъектИсточник</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовОбъектИсточникКонтекстноеМеню" id="2111"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовОбъектИсточникРасширеннаяПодсказка" id="2293"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовОбъектПриемник" id="2107">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ОбъектПриемник</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовОбъектПриемникКонтекстноеМеню" id="2108"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовОбъектПриемникРасширеннаяПодсказка" id="2294"/>
+										</InputField>
+										<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаОбъектПриемникСвойства" id="690">
+											<ReadOnly>true</ReadOnly>
+											<EnableContentChange>true</EnableContentChange>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Импорт: группа "Объект приемник - Свойства"</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Импорт: группа "Объект приемник - Свойства"</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаОбъектПриемникСвойстваРасширеннаяПодсказка" id="2295"/>
+											<ChildItems>
+												<CheckBoxField name="ИмпортТЗагружаемыхОбъектовПриемникПроведен" id="2182">
+													<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ПриемникПроведен</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleTextColor>#0000FF</TitleTextColor>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортТЗагружаемыхОбъектовПриемникПроведенКонтекстноеМеню" id="2183"/>
+													<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовПриемникПроведенРасширеннаяПодсказка" id="2296"/>
+												</CheckBoxField>
+												<CheckBoxField name="ИмпортТЗагружаемыхОбъектовПриемникПредопределенный" id="2185">
+													<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ПриемникПредопределенный</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleTextColor>#0000FF</TitleTextColor>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортТЗагружаемыхОбъектовПриемникПредопределенныйКонтекстноеМеню" id="2186"/>
+													<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовПриемникПредопределенныйРасширеннаяПодсказка" id="2297"/>
+												</CheckBoxField>
+												<CheckBoxField name="ИмпортТЗагружаемыхОбъектовПриемникПомеченНаУдаление" id="2188">
+													<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ПриемникПомеченНаУдаление</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleTextColor>#FF0000</TitleTextColor>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИмпортТЗагружаемыхОбъектовПриемникПомеченНаУдалениеКонтекстноеМеню" id="2189"/>
+													<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовПриемникПомеченНаУдалениеРасширеннаяПодсказка" id="2298"/>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаGUID" id="606">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: группа "GUID"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: группа "GUID"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаGUIDРасширеннаяПодсказка" id="2299"/>
+									<ChildItems>
+										<LabelField name="ИмпортТЗагружаемыхОбъектовGUIDИсточника" id="2119">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.GUIDИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовGUIDИсточникаКонтекстноеМеню" id="2120"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовGUIDИсточникаРасширеннаяПодсказка" id="2300"/>
+										</LabelField>
+										<LabelField name="ИмпортТЗагружаемыхОбъектовGUIDПриемника" id="2116">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.GUIDПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовGUIDПриемникаКонтекстноеМеню" id="2117"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовGUIDПриемникаРасширеннаяПодсказка" id="2301"/>
+										</LabelField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовПриемникНайденПО" id="2146">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ПриемникНайденПО</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приемник: найден по ...</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#0000FF</TitleTextColor>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>8</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовПриемникНайденПОКонтекстноеМеню" id="2147"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовПриемникНайденПОРасширеннаяПодсказка" id="2302"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаДатаИсточникаИПриемника" id="652">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: группа "Дата Истичника и Приемника"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт: группа "Дата Истичника и Приемника"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаДатаИсточникаИПриемникаРасширеннаяПодсказка" id="2303"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовДатаИсточника" id="2149">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ДатаИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовДатаИсточникаКонтекстноеМеню" id="2150"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовДатаИсточникаРасширеннаяПодсказка" id="2304"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовДатаПриемника" id="2152">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ДатаПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовДатаПриемникаКонтекстноеМеню" id="2153"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовДатаПриемникаРасширеннаяПодсказка" id="2305"/>
+										</InputField>
+										<CheckBoxField name="ИмпортТЗагружаемыхОбъектовПриемникДругойПериод" id="2143">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ПриемникДругойПериод</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приемник: др.период</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#0000FF</TitleTextColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовПриемникДругойПериодКонтекстноеМеню" id="2144"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовПриемникДругойПериодРасширеннаяПодсказка" id="2306"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаСуммыДокументов" id="677">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт группа "Суммы документов"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт группа "Суммы документов"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаСуммыДокументовРасширеннаяПодсказка" id="2307"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовСуммаИсточника" id="2173">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.СуммаИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовСуммаИсточникаКонтекстноеМеню" id="2174"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовСуммаИсточникаРасширеннаяПодсказка" id="2308"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовСуммаПриемника" id="2176">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.СуммаПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовСуммаПриемникаКонтекстноеМеню" id="2177"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовСуммаПриемникаРасширеннаяПодсказка" id="2309"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаРодители" id="670">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт группа "Родители"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт т загружаемых объектов группа родители</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаРодителиРасширеннаяПодсказка" id="2310"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовРодительИсточника" id="2164">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.РодительИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовРодительИсточникаКонтекстноеМеню" id="2165"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовРодительИсточникаРасширеннаяПодсказка" id="2311"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовРодительПриемника" id="2170">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.РодительПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовРодительПриемникаКонтекстноеМеню" id="2171"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовРодительПриемникаРасширеннаяПодсказка" id="2312"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаВладельцы" id="665">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт группа "Владельцы"</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт группа "Владельцы"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаВладельцыРасширеннаяПодсказка" id="2313"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовВладелецИсточника" id="2137">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ВладелецИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовВладелецИсточникаКонтекстноеМеню" id="2138"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовВладелецИсточникаРасширеннаяПодсказка" id="2314"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовВладелецПриемника" id="2158">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ВладелецПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовВладелецПриемникаКонтекстноеМеню" id="2159"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовВладелецПриемникаРасширеннаяПодсказка" id="2315"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИмпортТЗагружаемыхОбъектовГруппаОписаний" id="615">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт т загружаемых объектов группа описаний</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Импорт т загружаемых объектов группа описаний</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовГруппаОписанийРасширеннаяПодсказка" id="2316"/>
+									<ChildItems>
+										<InputField name="ИмпортТЗагружаемыхОбъектовОписаниеИсточника" id="2125">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ОписаниеИсточника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовОписаниеИсточникаКонтекстноеМеню" id="2126"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовОписаниеИсточникаРасширеннаяПодсказка" id="2317"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовОписаниеПриемника" id="2122">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.ОписаниеПриемника</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовОписаниеПриемникаКонтекстноеМеню" id="2123"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовОписаниеПриемникаРасширеннаяПодсказка" id="2318"/>
+										</InputField>
+										<InputField name="ИмпортТЗагружаемыхОбъектовКомментарий" id="2113">
+											<DataPath>Объект.ИмпортТЗагружаемыхОбъектов.Комментарий</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ИмпортТЗагружаемыхОбъектовКомментарийКонтекстноеМеню" id="2114"/>
+											<ExtendedTooltip name="ИмпортТЗагружаемыхОбъектовКомментарийРасширеннаяПодсказка" id="2319"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+						<InputField name="ИмпортТОбъектовПодвал" id="583">
+							<DataPath>Items.ИмпортТЗагружаемыхОбъектов.CurrentData.Комментарий</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Wrap>false</Wrap>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>false</ClearButton>
+							<SpinButton>false</SpinButton>
+							<OpenButton>true</OpenButton>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>false</ChoiceListButton>
+							<TextColor>#800000</TextColor>
+							<ContextMenu name="ИмпортТОбъектовПодвалКонтекстноеМеню" id="584"/>
+							<ExtendedTooltip name="ИмпортТОбъектовПодвалРасширеннаяПодсказка" id="2320"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="2321">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Администратор1С</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:1c75932e-ae2b-4cc6-8eb6-7197e0a04e07</Field>
+				<Field>Объект.ГлавныйУзелПредыдущий</Field>
+				<Field>Объект.ОбъектБД</Field>
+				<Field>Объект.ПоказыватьСообщения</Field>
+				<Field>Объект.СкрыватьПустыеТаблицыДвиженийРегистров</Field>
+				<Field>Объект.СкрыватьПустыеТабличныеЧасти</Field>
+			</Save>
+			<Columns>
+				<AdditionalColumns table="Объект.ТМетаданныеВводитсяНаОсновании">
+					<Column name="нПП" id="2322">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Объект" id="2333">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объект</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТДокументСписок">
+					<Column name="Включено" id="2323">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>+/-</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ДокументТек" id="2334">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Документ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+						</Type>
+					</Column>
+					<Column name="ПредставлениеТек" id="2344">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Представление</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДокументБыло" id="2352">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Документ (было)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТМетаданныеЯвляетсяОснованиемДля">
+					<Column name="нПП" id="2324">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Объект" id="2335">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объект</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТСсылкиСписок">
+					<Column name="Включено" id="2325">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>+/-</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТМетаданныеРегистрыОбъекта">
+					<Column name="нПП" id="2326">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>4</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Регистр" id="2336">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Регистр</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Позиция" id="2345">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>позиция: Регистратор/Измерение/Ресурс/Реквизит</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Ведущее" id="2353">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ведущее (РСведений)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ИмпортТМетаданныеИсточникаПриемника">
+					<Column name="Картинка" id="2346">
+						<Type>
+							<v8:Type>v8ui:Picture</v8:Type>
+						</Type>
+					</Column>
+					<Column name="КоллекцияИсточника" id="2327">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Коллекция источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ИмяВИсточнике" id="2337">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя в источнике</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ТипРеквизитаИсточника" id="2354">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип Реквизита-Источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:TypeDescription</v8:Type>
+						</Type>
+					</Column>
+					<Column name="КоллекцияПриемника" id="2358">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Коллекция приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ИмяВПриемнике" id="2361">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя в приемнике</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ТипРеквизитаПриемника" id="2364">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип Реквизита-Приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:TypeDescription</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Загрузить" id="2367">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Загрузить</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Свойства" id="2370">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Свойства</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СписокЗначенийОтбора" id="2373">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список значений отбора</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ЗначениеОтбора" id="2375">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Значение отбора</v8:content>
+							</v8:item>
+						</Title>
+						<Type/>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТСвойстваОбъекта">
+					<Column name="Свойство" id="2328">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Свойство</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Значение" id="2338">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Значение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТМетаданныеПланыОбмена">
+					<Column name="нПП" id="2329">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>2</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ПланОбмена" id="2339">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>План обмена</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ПредставлениеОбъекта" id="2347">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Представление объекта</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ИмпортТЗагружаемыхОбъектов">
+					<Column name="НомерСтроки" id="2330">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номер строки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Загрузить" id="2340">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Загрузить</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Загружен" id="2348">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Загружен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ИмяОбъектаИсточника" id="2355">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя Объекта-Источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ОбъектПриемник" id="2359">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ОБЪЕКТ-Приемник</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						</Type>
+					</Column>
+					<Column name="ОбъектИсточник" id="2362">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ОБЪЕКТ-Источник</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Комментарий" id="2365">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Комментарий</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="GUIDПриемника" id="2368">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>GUID Объекта-Приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:UUID</v8:Type>
+						</Type>
+					</Column>
+					<Column name="GUIDИсточника" id="2371">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>GUID Объекта-Источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:UUID</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОписаниеПриемника" id="2374">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Приемник-Описание/Комментарий</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ОписаниеИсточника" id="2376">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Источник-Описание/Комментарий</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="НомерКодИсточника" id="2380">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номер/Код Источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="НаименованиеДатаИсточника" id="13">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование/Дата Источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ВладелецИсточникаGUID" id="14">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>GUID Владельца источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:UUID</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ВладелецИсточника" id="15">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Владелец Источника (Строка)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ВладелецПриемникаGUID" id="16">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>GUID Владела приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:UUID</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПриемникДругойПериод" id="17">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объект-Приемник в другом периоде</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПриемникНайденПО" id="18">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объект-Приемник найден по ...</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДатаИсточника" id="19">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата создания источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДатаПриемника" id="20">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата создания приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="ТипОбъекта" id="21">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ВладелецПриемника" id="22">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Владелец приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						</Type>
+					</Column>
+					<Column name="РодительИсточникаGUID" id="23">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>GUID Родителя источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:UUID</v8:Type>
+						</Type>
+					</Column>
+					<Column name="РодительИсточника" id="24">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Родитель источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="РодительПриемникаGUID" id="25">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>GUID Родителя приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:UUID</v8:Type>
+						</Type>
+					</Column>
+					<Column name="РодительПриемника" id="26">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Родитель приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						</Type>
+					</Column>
+					<Column name="СуммаИсточника" id="27">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма источника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>15</v8:Digits>
+								<v8:FractionDigits>2</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="СуммаПриемника" id="28">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>15</v8:Digits>
+								<v8:FractionDigits>2</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ПриемникПерепроведен" id="29">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Перепроведен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПриемникПроведен" id="30">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Проведен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПриемникПредопределенный" id="31">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Предопределенный</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПриемникПомеченНаУдаление" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Приемник: помечен на удаление</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ИмяОбъектаПриемника" id="33">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя Объекта-Приемника</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТРеквизитыОбъекта">
+					<Column name="Имя" id="2331">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Представление" id="2341">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Представление</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ОписаниеТипов" id="2349">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Описание типов</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:TypeDescription</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Тип" id="2356">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Значение" id="2360">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Значение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+							<v8:Type>xs:boolean</v8:Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+							<v8:NumberQualifiers>
+								<v8:Digits>20</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="Группа" id="2363">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>3</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Блокированный" id="2366">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блокированный</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Проверяемый" id="2369">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Проверяемый</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ФОпция" id="2372">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ф.опция</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТМетаданныеПодпискиНаСобытия">
+					<Column name="нПП" id="2332">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Подписка" id="2342">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подписка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Обработчик" id="2350">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Обработчик</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Событие" id="2357">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Событие</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.ТСправочникСписок">
+					<Column name="НПП" id="2343">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>№</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Включено" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>+/-</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Элемент" id="2351">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Элемент</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="РеквизитСтароеЗначение" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизит: Старое значение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:Type>v8:UUID</v8:Type>
+							<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="РеквизитНовоеЗначение" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизит: Новое значение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:Type>v8:UUID</v8:Type>
+							<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+							<v8:DateQualifiers>
+								<v8:DateFractions>DateTime</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="Описание" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Описание</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Артикул" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Артикул</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Родитель" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Родитель</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="НаименованиеСокращенное" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование сокращенное</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="НаименованиеПолное" id="10">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование полное</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Изменен" id="11">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Ссылка" id="12">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ссылка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмпортВариантРаботыВнешнейИБ" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл/КлиентСервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортИмяСервера" id="2377">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя сервера 1С:Предприятие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортИмяБазыНаСервере" id="2379">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя базы на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортПользователь" id="2378">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмпортПользователь</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмпортПароль" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортАутентификацияWindows" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация Windows</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортКаталогБазы" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог информационной базы источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмпортКаталогБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмпортСоединениеУстановлено" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соединение с внешней БД установлено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортКонфигурацияИсточника" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кконфигурация Источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортВерсияИсточника" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия конфигурации Источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортИмяCOMСоединителя" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт: Имя COMСоединителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортОрганизацияИсточник" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник: Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИмпортЕстьСправочникОрганизацииИсточника" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочник организации в Источнике существует</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортСписокОрганизацийИсточника" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт список организаций источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортНомерГруппыИсточника" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер выбранной группы источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортНомерОрганизацииИсточника" id="88">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер выбранной организации источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортПериод" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт: Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортТипОбъектаБД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмпортСтруктураПараметровСоединения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт структура параметров соединения</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="кнИмпортУстановитьНачальныеПараметрыСоединения" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить начальные параметры соединения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пполучить начальные параметры соединения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортУстановитьНачальныеПараметрыСоединения</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="кнИмпортFAQ" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>FAQ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт FAQ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИмпортFAQ</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="кнИмпортПодключитьсяКВнешнемуИсточнику" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться к Внешнему источнику (Базе Данных)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться к Внешнему источнику (Базе Данных)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИмпортПодключитьсяКВнешнемуИсточнику</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="кнИмпортУстановитьФлажки" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки у импортируемых объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортУстановитьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="кнИмпортСнятьФлажки" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки у импортируемых объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортСнятьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="кнИмпортироватьДанныеИзВнешнегоИсточника" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить объекты из внешнего источника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортироватьДанныеИзВнешнегоИсточника</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="кнИмпортОтключитьсяОтВнешнегоИсточника" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключиться от Внешнего источника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключиться от Внешнего источника (Базы Данных)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИмпортОтключитьсяОтВнешнегоИсточника</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="кнИмпортСопоставитьДанныеСВнешнимИсточникомИЗаполнитьТаблицу" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить и заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить объекты Источника и Приемника и, если отсутствует или отличается, установить флажок "Заполнить"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.FilterByCurrentValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортСопоставитьДанныеСВнешнимИсточникомИЗаполнитьТаблицу</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="кнИмпортПолучитьНачальныеПараметрыИмпорта" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить начальные параметры импорта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить начальные параметры импорта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортПолучитьНачальныеПараметрыИмпорта</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="кнИмпортПровестиДокументы" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепровести ранее проведенные документы, загруженные из Внешнего источника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Post</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортПровестиДокументы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="кнИмпортОчиститьОчиститьТаблицуЗагружаемыхОбъектов" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицу сопоставлений данных информационных баз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Clear</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортОчиститьТаблицуЗагружаемыхОбъектов</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
