@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<ExternalDataProcessor uuid="5ba74337-11e8-4170-9fb1-030b1114f942">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>371d9363-be5f-4658-b73a-afc3a8c9075e</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.ОтладчикЗапросов" category="Object">
+				<xr:TypeId>a9c4d365-fd35-4ba6-8827-8aca938a4f16</xr:TypeId>
+				<xr:ValueId>828b1310-f526-48ce-a2c5-0e25b34cd619</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтладчикЗапросов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отладчик запросов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>DrAku1a aka Акулов Андрей Сергеевич</Comment>
+			<DefaultForm>ExternalDataProcessor.ОтладчикЗапросов.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="ba235b9b-0b38-4ff5-a26e-0d7237601c41">
+				<Properties>
+					<Name>ПарсерТекстаЗапроса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Парсер текста запроса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8c8ce552-d0ff-4925-a9a7-3e71c3e92f48">
+				<Properties>
+					<Name>ОтключитьПроверкуНовыхВерсий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отключить проверку новых версий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Form>ОсновнаяФорма</Form>
+			<Form>ПросмотрВременныхТаблиц</Form>
+			<Form>ВыборТипаЗначения</Form>
+			<Form>РедакторТаблицыЗначений</Form>
+			<Form>РедакторКолонокРедактораТЗ</Form>
+			<Form>МножественныйВыбор</Form>
+			<Form>КонструкторУО</Form>
+			<Form>МакетыКода</Form>
+			<Form>КонтекстВыполненияКода</Form>
+			<Form>СтруктураЗапроса</Form>
+			<Form>ИсторияЗапросов</Form>
+			<Form>ФормаВыбораИзСписка</Form>
+			<Form>ПакетЗапросов</Form>
+			<Form>НастройкаВывода</Form>
+			<Form>ЗагрузкаТЗизExcel</Form>
+			<Form>НастройкаСортировкиТЗ</Form>
+			<Form>РедакторСпискаЗначений</Form>
+			<Form>РедакторМоментВремени</Form>
+			<Form>РедакторГраница</Form>
+			<Form>КонструкторЭП</Form>
+			<Template>МакетКодаУниверсальногоОтчета</Template>
+			<Template>МакетДереваЗапросов</Template>
+			<Template>ВстроеннаяСправкаФормы</Template>
+			<Template>МакетВстроеннойСправкиHTML</Template>
+			<Template>УстаревшийКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</Template>
+		</ChildObjects>
+	</ExternalDataProcessor>
+</MetaDataObject>

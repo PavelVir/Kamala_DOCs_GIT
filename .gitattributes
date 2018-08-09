@@ -1,1 +1,4 @@
 *.docx diff=pandoc
+*.pptx diff=zip
+*.xls diff=zip
+*.xlsx diff=zip
