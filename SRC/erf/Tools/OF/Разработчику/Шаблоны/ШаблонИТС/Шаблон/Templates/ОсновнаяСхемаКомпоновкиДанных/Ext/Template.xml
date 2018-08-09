@@ -1,0 +1,1165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Затрата</dataPath>
+			<field>Затрата</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатурнаяГруппа</dataPath>
+			<field>НоменклатурнаяГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияЗатраты</dataPath>
+			<field>СерияЗатраты</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВес</dataPath>
+			<field>КоличествоВес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель (ТЕСТ)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>К</dataPath>
+			<field>К</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеУчитыватьВРасчетеБазы</dataPath>
+			<field>НеУчитыватьВРасчетеБазы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеУчитыватьДвиженияПриРасчетеСебестоимости</dataPath>
+			<field>НеУчитыватьДвиженияПриРасчетеСебестоимости</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяЗатрат</dataPath>
+			<field>СтатьяЗатрат</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаЗатраты</dataPath>
+			<field>ХарактеристикаЗатраты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Продукция</dataPath>
+			<field>Продукция</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияПродукции</dataPath>
+			<field>СерияПродукции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВыпуска</dataPath>
+			<field>ДокументВыпуска</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Качество</dataPath>
+			<field>Качество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спецификация</dataPath>
+			<field>Спецификация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаПродукции</dataPath>
+			<field>ХарактеристикаПродукции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приоритет</dataPath>
+			<field>Приоритет</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>К2</dataPath>
+			<field>К2</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>сВысота</dataPath>
+			<field>сВысота</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>сДлина</dataPath>
+			<field>сДлина</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>сШирина</dataPath>
+			<field>сШирина</field>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>1_Входящее</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Затрата</dataPath>
+				<field>Затрата</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатурнаяГруппа</dataPath>
+				<field>НоменклатурнаяГруппа</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияЗатраты</dataPath>
+				<field>СерияЗатраты</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВес</dataPath>
+				<field>КоличествоВес</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Объем, м3</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К</dataPath>
+				<field>К</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заказ</dataPath>
+				<field>Заказ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НеУчитыватьВРасчетеБазы</dataPath>
+				<field>НеУчитыватьВРасчетеБазы</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НеУчитыватьДвиженияПриРасчетеСебестоимости</dataPath>
+				<field>НеУчитыватьДвиженияПриРасчетеСебестоимости</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяЗатрат</dataPath>
+				<field>СтатьяЗатрат</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаЗатраты</dataPath>
+				<field>ХарактеристикаЗатраты</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Приоритет</dataPath>
+				<field>Приоритет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К2</dataPath>
+				<field>К2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сВысота</dataPath>
+				<field>сВысота</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сДлина</dataPath>
+				<field>сДлина</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сШирина</dataPath>
+				<field>сШирина</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	НезавершенноеПроизводствоОбороты.Затрата КАК Затрата,
+	НезавершенноеПроизводствоОбороты.СерияЗатраты КАК СерияЗатраты,
+	НезавершенноеПроизводствоОбороты.КоличествоПриход КАК КоличествоВес,
+	"Входящее сырье" КАК НоменклатурнаяГруппа,
+	"1" КАК Приоритет,
+	НезавершенноеПроизводствоОбороты.Регистратор КАК Регистратор,
+	НезавершенноеПроизводствоОбороты.СерияЗатраты.сДлина * НезавершенноеПроизводствоОбороты.СерияЗатраты.сШирина * НезавершенноеПроизводствоОбороты.СерияЗатраты.сВысота / 1000000000 КАК К,
+	НезавершенноеПроизводствоОбороты.СерияЗатраты.сДлина * НезавершенноеПроизводствоОбороты.СерияЗатраты.сШирина  / 1000000 КАК К2,
+	НезавершенноеПроизводствоОбороты.СерияЗатраты.сДлина как сДлина,
+	НезавершенноеПроизводствоОбороты.СерияЗатраты.сШирина как сШирина,
+	НезавершенноеПроизводствоОбороты.СерияЗатраты.сВысота  как сВысота
+ИЗ
+	РегистрНакопления.НезавершенноеПроизводство.Обороты(, , Регистратор, СерияЗатраты &lt;&gt; ЗНАЧЕНИЕ(Справочник.серииНоменклатуры.Пустаяссылка)) КАК НезавершенноеПроизводствоОбороты
+ГДЕ
+	(НезавершенноеПроизводствоОбороты.Регистратор ССЫЛКА Документ.ТребованиеНакладная
+			ИЛИ НезавершенноеПроизводствоОбороты.Регистратор ССЫЛКА Документ.ОприходованиеНЗП)</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>2_ВыпускРасход</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатурнаяГруппа</dataPath>
+				<field>НоменклатурнаяГруппа</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>затрата</dataPath>
+				<field>затрата</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияЗатраты</dataPath>
+				<field>СерияЗатраты</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВес</dataPath>
+				<field>КоличествоВес</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К</dataPath>
+				<field>К</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Продукция</dataPath>
+				<field>Продукция</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияПродукции</dataPath>
+				<field>СерияПродукции</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументВыпуска</dataPath>
+				<field>ДокументВыпуска</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заказ</dataPath>
+				<field>Заказ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Качество</dataPath>
+				<field>Качество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Спецификация</dataPath>
+				<field>Спецификация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаПродукции</dataPath>
+				<field>ХарактеристикаПродукции</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Приоритет</dataPath>
+				<field>Приоритет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К2</dataPath>
+				<field>К2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сВысота</dataPath>
+				<field>сВысота</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сДлина</dataPath>
+				<field>сДлина</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сШирина</dataPath>
+				<field>сШирина</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ВыпускПродукцииБухгалтерскийУчетОбороты.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции КАК СерияЗатраты,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.Продукция КАК затрата,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.КоличествоОборот КАК КоличествоВес,
+	"2" КАК Приоритет,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сДлина * ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сШирина * ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сВысота / 1000000000 КАК К,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сДлина * ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сШирина   / 1000000 КАК К2,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.Регистратор КАК Регистратор,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сДлина как сДлина,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сШирина как сШирина,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сВысота как сВысота
+ИЗ
+	РегистрНакопления.ВыпускПродукцииБухгалтерскийУчет.Обороты(
+			,
+			,
+			Авто,
+			СерияПродукции &lt;&gt; ЗНАЧЕНИЕ(Справочник.серииНоменклатуры.Пустаяссылка)
+				И НоменклатурнаяГруппа &lt;&gt; ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.Пустаяссылка)
+				И Качество &lt;&gt; ЗНАЧЕНИЕ(Справочник.Качество.Пустаяссылка)) КАК ВыпускПродукцииБухгалтерскийУчетОбороты</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>4_ВыпускПриход</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>затрата</dataPath>
+				<field>затрата</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К</dataPath>
+				<field>К</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатурнаяГруппа</dataPath>
+				<field>НоменклатурнаяГруппа</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияЗатраты</dataPath>
+				<field>СерияЗатраты</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВес</dataPath>
+				<field>КоличествоВес</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Приоритет</dataPath>
+				<field>Приоритет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К2</dataPath>
+				<field>К2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сВысота</dataPath>
+				<field>сВысота</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сДлина</dataPath>
+				<field>сДлина</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сШирина</dataPath>
+				<field>сШирина</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ВыпускПродукцииБухгалтерскийУчет.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции КАК СерияЗатраты,
+	ВыпускПродукцииБухгалтерскийУчет.Продукция КАК затрата,
+	"2" КАК Приоритет,
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сДлина * ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сШирина * ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сВысота / 1000000000 КАК К,
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сДлина * ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сШирина  / 1000000 КАК К2,
+	ВыпускПродукцииБухгалтерскийУчет.Регистратор КАК Регистратор,
+	ВыпускПродукцииБухгалтерскийУчет.Количество КАК КоличествоВес,
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сДлина как сДлина,
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сШирина как сШирина,
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции.сВысота как сВысота 
+ИЗ
+	РегистрНакопления.ВыпускПродукцииБухгалтерскийУчет КАК ВыпускПродукцииБухгалтерскийУчет
+ГДЕ
+	ВыпускПродукцииБухгалтерскийУчет.СерияПродукции &lt;&gt; ЗНАЧЕНИЕ(Справочник.серииНоменклатуры.Пустаяссылка)
+	И ВыпускПродукцииБухгалтерскийУчет.НоменклатурнаяГруппаПолучатель &lt;&gt; ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.Пустаяссылка)
+	И ВыпускПродукцииБухгалтерскийУчет.КодОперации &lt;&gt; &amp;КодОперацииВО</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>3_ВыпускНаСкладПриход</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>затрата</dataPath>
+				<field>затрата</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К</dataPath>
+				<field>К</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВес</dataPath>
+				<field>КоличествоВес</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатурнаяГруппа</dataPath>
+				<field>НоменклатурнаяГруппа</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Продукция</dataPath>
+				<field>Продукция</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияЗатраты</dataPath>
+				<field>СерияЗатраты</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияПродукции</dataPath>
+				<field>СерияПродукции</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументВыпуска</dataPath>
+				<field>ДокументВыпуска</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заказ</dataPath>
+				<field>Заказ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Качество</dataPath>
+				<field>Качество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Спецификация</dataPath>
+				<field>Спецификация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаПродукции</dataPath>
+				<field>ХарактеристикаПродукции</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Приоритет</dataPath>
+				<field>Приоритет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К2</dataPath>
+				<field>К2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сВысота</dataPath>
+				<field>сВысота</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сДлина</dataPath>
+				<field>сДлина</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сШирина</dataPath>
+				<field>сШирина</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	"Выпущено на склад" КАК НоменклатурнаяГруппа,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции КАК СерияЗатраты,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.Продукция КАК затрата,
+	-ВыпускПродукцииБухгалтерскийУчетОбороты.КоличествоОборот КАК КоличествоВес,
+	"3" КАК Приоритет,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сДлина * ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сШирина * ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сВысота / 1000000000 КАК К,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сДлина * ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сШирина   / 1000000 КАК К2,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.Регистратор КАК Регистратор,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сДлина как сДлина,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сШирина как сШирина,
+	ВыпускПродукцииБухгалтерскийУчетОбороты.СерияПродукции.сВысота как сВысота
+ИЗ
+	РегистрНакопления.ВыпускПродукцииБухгалтерскийУчет.Обороты(
+			,
+			,
+			Авто,
+			СерияПродукции &lt;&gt; ЗНАЧЕНИЕ(Справочник.серииНоменклатуры.Пустаяссылка)
+				И НоменклатурнаяГруппа &lt;&gt; ЗНАЧЕНИЕ(Справочник.НоменклатурныеГруппы.Пустаяссылка)
+				И Качество &lt;&gt; ЗНАЧЕНИЕ(Справочник.Качество.Пустаяссылка)) КАК ВыпускПродукцииБухгалтерскийУчетОбороты</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>5_ЗатратыМатериалов</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Затрата</dataPath>
+				<field>Затрата</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатурнаяГруппа</dataPath>
+				<field>НоменклатурнаяГруппа</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияЗатраты</dataPath>
+				<field>СерияЗатраты</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Приоритет</dataPath>
+				<field>Приоритет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К</dataPath>
+				<field>К</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВес</dataPath>
+				<field>КоличествоВес</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>К2</dataPath>
+				<field>К2</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сВысота</dataPath>
+				<field>сВысота</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сДлина</dataPath>
+				<field>сДлина</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>сШирина</dataPath>
+				<field>сШирина</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ЗатратыНаВыпускПродукции.Затрата,
+	ЗатратыНаВыпускПродукции.СерияЗатраты,
+	ЗатратыНаВыпускПродукции.НоменклатурнаяГруппа,
+	-ЗатратыНаВыпускПродукции.Количество КАК КоличествоВес,
+	"2" КАК Приоритет,
+	ЗатратыНаВыпускПродукции.Регистратор,
+	ЗатратыНаВыпускПродукции.СерияЗатраты.сДлина * ЗатратыНаВыпускПродукции.СерияЗатраты.сШирина * ЗатратыНаВыпускПродукции.СерияЗатраты.сВысота / 1000000000 КАК К,
+	ЗатратыНаВыпускПродукции.СерияЗатраты.сДлина * ЗатратыНаВыпускПродукции.СерияЗатраты.сШирина  / 1000000 КАК К2,
+	ЗатратыНаВыпускПродукции.СерияЗатраты.сДлина как сДлина,
+	ЗатратыНаВыпускПродукции.СерияЗатраты.сШирина как сШирина,
+	ЗатратыНаВыпускПродукции.СерияЗатраты.сВысота как сВысота
+ИЗ
+	РегистрНакопления.ЗатратыНаВыпускПродукции КАК ЗатратыНаВыпускПродукции
+ГДЕ
+	ЗатратыНаВыпускПродукции.КодОперации = &amp;КодОперацииПрямыезатраты
+	И ЗатратыНаВыпускПродукции.СерияЗатраты &lt;&gt; ЗНАЧЕНИЕ(Справочник.серииНоменклатуры.Пустаяссылка)</query>
+		</item>
+	</dataSet>
+	<calculatedField>
+		<dataPath>КвоШт</dataPath>
+		<expression>Выбор Когда  Затрата.ЕдиницаХраненияОстатков.ЕдиницаПоКлассификатору=&amp;М3 Тогда КоличествоВес/К  Когда  Затрата.ЕдиницаХраненияОстатков.ЕдиницаПоКлассификатору=&amp;М2 Тогда  КоличествоВес/к2 иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Кво,  шт</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Итог</dataPath>
+		<expression>"Остаток"</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Остаток НЗП</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КвоОбъем</dataPath>
+		<expression>Выбор Когда  Затрата.ЕдиницаХраненияОстатков.ЕдиницаПоКлассификатору=&amp;М3 Тогда КоличествоВес Когда  Затрата.ЕдиницаХраненияОстатков.ЕдиницаПоКлассификатору=&amp;М2 Тогда КоличествоВес*(сВысота/1000) иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объем</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КвоПлощадь</dataPath>
+		<expression>Выбор Когда  Затрата.ЕдиницаХраненияОстатков.ЕдиницаПоКлассификатору=&amp;М2 Тогда КоличествоВес  Когда  Затрата.ЕдиницаХраненияОстатков.ЕдиницаПоКлассификатору=&amp;М3   Тогда КоличествоВес/(сВысота/1000) Иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Площадь</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоВес</dataPath>
+		<expression>Сумма(КоличествоВес)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КвоШт</dataPath>
+		<expression>Сумма(КвоШт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КвоОбъем</dataPath>
+		<expression>Сумма(КвоОбъем)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КвоПлощадь</dataPath>
+		<expression>Сумма(КвоПлощадь)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КвоШт</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>Стандарт</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>СтандартныйПериод</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Стандарт.ДатаНАчала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Стандарт.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>КодОперацииПрямыезатраты</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Код операции прямыезатраты</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.КодыОперацийЗатратыНаВыпускПродукции.ПрямыеЗатраты</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КодОперацииВО</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Код операции ВО</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.КодыОперацийВыпускПродукции.ВыпускПродукцииПоФиксированнойСтоимости</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>м3</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>М3</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.КлассификаторЕдиницИзмерения.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>м2</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>М2</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.КлассификаторЕдиницИзмерения.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Остаток НЗП</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:VerticalAlign">Bottom</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell/>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кво,  шт</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:ReportLineColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">13.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>РежимИзмененияРазмераКолонки</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:SizeChangeMode">QuickChange</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Площадь</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:ReportLineColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>РежимИзмененияРазмераКолонки</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:SizeChangeMode">QuickChange</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объем</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:ReportLineColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>РежимИзмененияРазмераКолонки</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:SizeChangeMode">QuickChange</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xsi:nil="true"/>
+	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Продукция/серия</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">33.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">33.875</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ед.Изм</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<fieldTemplate>
+		<field>Приоритет</field>
+		<template>Макет3</template>
+	</fieldTemplate>
+	<groupTemplate>
+		<groupName>НГ</groupName>
+		<templateType>OverallHeader</templateType>
+		<template>Макет2</template>
+	</groupTemplate>
+	<groupHeaderTemplate>
+		<groupName>Затрата</groupName>
+		<templateType>Header</templateType>
+		<template>Макет4</template>
+	</groupHeaderTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КвоШт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КвоПлощадь</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КвоОбъем</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>КоличествоВес</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СерияЗатраты.сКод</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.сКод.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>5e87bf61-d357-446e-9e86-5f0878467b5b</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>м3</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.КлассификаторЕдиницИзмерения.ПустаяСсылка</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>м2</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.КлассификаторЕдиницИзмерения.ПустаяСсылка</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Приоритет</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НоменклатурнаяГруппа.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Баланс блока</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:name>НГ</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Приоритет</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НоменклатурнаяГруппа</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>РасположениеОбщихИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:name>Затрата</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Затрата</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Затрата.ЕдиницаХраненияОстатков</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>СерияЗатраты</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
