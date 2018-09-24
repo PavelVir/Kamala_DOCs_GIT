@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CancelEdit</ExcludedCommand>
+		<ExcludedCommand>ChangeSettingsStructure</ExcludedCommand>
+		<ExcludedCommand>ChangeVariant</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>EndEdit</ExcludedCommand>
+		<ExcludedCommand>Generate</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>LoadReportSettings</ExcludedCommand>
+		<ExcludedCommand>LoadVariant</ExcludedCommand>
+		<ExcludedCommand>NewWindow</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>Print</ExcludedCommand>
+		<ExcludedCommand>ReportSettings</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Save</ExcludedCommand>
+		<ExcludedCommand>SaveReportSettings</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>SaveVariant</ExcludedCommand>
+		<ExcludedCommand>StandardSettings</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ReportResult>Результат</ReportResult>
+	<DetailsData>ДанныеРасшифровки</DetailsData>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<CustomSettingsFolder>КомпоновщикНастроекПользовательскиеНастройки</CustomSettingsFolder>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ОсновнаяКоманднаяПанель" id="233">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Main command bar</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельРасширеннаяПодсказка" id="235"/>
+			<ChildItems>
+				<Button name="ФормаКнопкаСформироватьСторно" id="159">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.КомандаСформироватьСторно</CommandName>
+					<ExtendedTooltip name="ФормаКнопкаСформироватьСторноРасширеннаяПодсказка" id="160"/>
+				</Button>
+				<Button name="ФормаКнопкаОтобратьВТаблицу" id="161">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КомандаОтобратьВТаблицу</CommandName>
+					<ExtendedTooltip name="ФормаКнопкаОтобратьВТаблицуРасширеннаяПодсказка" id="162"/>
+				</Button>
+				<Button name="ФормаКнопкаСформироватьСторноПоТаблице" id="163">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КомандаСформироватьСторноПоТаблице</CommandName>
+					<ExtendedTooltip name="ФормаКнопкаСформироватьСторноПоТаблицеРасширеннаяПодсказка" id="164"/>
+				</Button>
+				<Button name="ФормаКнопкаПоказатьНастройки" id="165">
+					<Type>CommandBarButton</Type>
+					<Check>true</Check>
+					<CommandName>Form.Command.КомандаПоказатьНастройки</CommandName>
+					<ExtendedTooltip name="ФормаКнопкаПоказатьНастройкиРасширеннаяПодсказка" id="166"/>
+				</Button>
+				<Button name="ФормаКнопкаПоказатьПроводки" id="216">
+					<Type>CommandBarButton</Type>
+					<Check>true</Check>
+					<CommandName>Form.Command.КомандаПоказатьПроводки</CommandName>
+					<ExtendedTooltip name="ФормаКнопкаПоказатьПроводкиРасширеннаяПодсказка" id="217"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="ГруппаШапкаОбработки" id="218">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаШапкаОбработкиРасширеннаяПодсказка" id="219"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПериод" id="220">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="221"/>
+					<ChildItems>
+						<InputField name="СтандартныйПериод" id="222">
+							<DataPath>Отчет.СтандартныйПериод</DataPath>
+							<ContextMenu name="СтандартныйПериодКонтекстноеМеню" id="223"/>
+							<ExtendedTooltip name="СтандартныйПериодРасширеннаяПодсказка" id="224"/>
+							<Events>
+								<Event name="OnChange">СтандартныйПериодПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРеквизитыДокумента" id="225">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты документа корректировки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа реквизиты документа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРеквизитыДокументаРасширеннаяПодсказка" id="226"/>
+					<ChildItems>
+						<InputField name="ДатаДокумента" id="227">
+							<DataPath>Отчет.ДатаДокумента</DataPath>
+							<ContextMenu name="ДатаДокументаКонтекстноеМеню" id="228"/>
+							<ExtendedTooltip name="ДатаДокументаРасширеннаяПодсказка" id="229"/>
+						</InputField>
+						<InputField name="Комментарий" id="230">
+							<DataPath>Отчет.Комментарий</DataPath>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="231"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="232"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="КомпоновщикНастроекПользовательскиеНастройки" id="109">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>User-defined settings group</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="110"/>
+		</UsualGroup>
+		<Pages name="ГруппаНастройкиКомпоновщика" id="182">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки компоновщика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки компоновщика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаНастройкиКомпоновщикаРасширеннаяПодсказка" id="183"/>
+			<ChildItems>
+				<Page name="ГруппаНастройкиКомпоновщикаПараметры" id="201">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиКомпоновщикаПараметрыРасширеннаяПодсказка" id="202"/>
+					<ChildItems>
+						<Table name="НастройкиКомпоновщикаПараметры" id="203">
+							<Representation>Tree</Representation>
+							<Autofill>true</Autofill>
+							<Width>50</Width>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<DataPath>Отчет.SettingsComposer.Settings.DataParameters</DataPath>
+							<ContextMenu name="НастройкиКомпоновщикаПараметрыКонтекстноеМеню" id="204"/>
+							<AutoCommandBar name="НастройкиКомпоновщикаПараметрыКоманднаяПанель" id="205"/>
+							<ExtendedTooltip name="НастройкиКомпоновщикаПараметрыРасширеннаяПодсказка" id="206"/>
+							<SearchStringAddition name="НастройкиКомпоновщикаПараметрыСтрокаПоиска" id="207">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаПараметры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаПараметрыСтрокаПоискаКонтекстноеМеню" id="208"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаПараметрыСтрокаПоискаРасширеннаяПодсказка" id="209"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиКомпоновщикаПараметрыСостояниеПросмотра" id="210">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаПараметры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаПараметрыСостояниеПросмотраКонтекстноеМеню" id="211"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаПараметрыСостояниеПросмотраРасширеннаяПодсказка" id="212"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиКомпоновщикаПараметрыУправлениеПоиском" id="213">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаПараметры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаПараметрыУправлениеПоискомКонтекстноеМеню" id="214"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаПараметрыУправлениеПоискомРасширеннаяПодсказка" id="215"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкиКомпоновщикаОтбор" id="184">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиКомпоновщикаОтборРасширеннаяПодсказка" id="185"/>
+					<ChildItems>
+						<Table name="НастройкиКомпоновщикаОтбор" id="167">
+							<Representation>Tree</Representation>
+							<Autofill>true</Autofill>
+							<Width>60</Width>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Отчет.SettingsComposer.Settings.Filter</DataPath>
+							<ViewMode>All</ViewMode>
+							<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+							<ContextMenu name="НастройкиКомпоновщикаОтборКонтекстноеМеню" id="168"/>
+							<AutoCommandBar name="НастройкиКомпоновщикаОтборКоманднаяПанель" id="169"/>
+							<ExtendedTooltip name="НастройкиКомпоновщикаОтборРасширеннаяПодсказка" id="170"/>
+							<SearchStringAddition name="НастройкиКомпоновщикаОтборСтрокаПоиска" id="171">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаОтбор</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаОтборСтрокаПоискаКонтекстноеМеню" id="172"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаОтборСтрокаПоискаРасширеннаяПодсказка" id="173"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиКомпоновщикаОтборСостояниеПросмотра" id="174">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаОтбор</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаОтборСостояниеПросмотраКонтекстноеМеню" id="175"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаОтборСостояниеПросмотраРасширеннаяПодсказка" id="176"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиКомпоновщикаОтборУправлениеПоиском" id="177">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаОтбор</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаОтборУправлениеПоискомКонтекстноеМеню" id="178"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаОтборУправлениеПоискомРасширеннаяПодсказка" id="179"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкиКомпоновщикаСортировка" id="186">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сортировка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сортировка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиКомпоновщикаСортировкаРасширеннаяПодсказка" id="187"/>
+					<ChildItems>
+						<Table name="НастройкиКомпоновщикаСортировка" id="188">
+							<Representation>List</Representation>
+							<Autofill>true</Autofill>
+							<Width>60</Width>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Отчет.SettingsComposer.Settings.Order</DataPath>
+							<ContextMenu name="НастройкиКомпоновщикаСортировкаКонтекстноеМеню" id="189"/>
+							<AutoCommandBar name="НастройкиКомпоновщикаСортировкаКоманднаяПанель" id="190"/>
+							<ExtendedTooltip name="НастройкиКомпоновщикаСортировкаРасширеннаяПодсказка" id="191"/>
+							<SearchStringAddition name="НастройкиКомпоновщикаСортировкаСтрокаПоиска" id="192">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаСортировка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаСортировкаСтрокаПоискаКонтекстноеМеню" id="193"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаСортировкаСтрокаПоискаРасширеннаяПодсказка" id="194"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиКомпоновщикаСортировкаСостояниеПросмотра" id="195">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаСортировка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаСортировкаСостояниеПросмотраКонтекстноеМеню" id="196"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаСортировкаСостояниеПросмотраРасширеннаяПодсказка" id="197"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиКомпоновщикаСортировкаУправлениеПоиском" id="198">
+								<AdditionSource>
+									<Item>НастройкиКомпоновщикаСортировка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиКомпоновщикаСортировкаУправлениеПоискомКонтекстноеМеню" id="199"/>
+								<ExtendedTooltip name="НастройкиКомпоновщикаСортировкаУправлениеПоискомРасширеннаяПодсказка" id="200"/>
+							</SearchControlAddition>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаОтобранныеПроводки" id="111">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобранные проводки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отобранные проводки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаОтобранныеПроводкиРасширеннаяПодсказка" id="112"/>
+			<ChildItems>
+				<Table name="ПроводкиКСторнированию" id="237">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Отчет.ПроводкиКСторнированию</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПроводкиКСторнированиюКонтекстноеМеню" id="239">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаУстановитьПометки" id="117">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаУстановитьПометки</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаУстановитьПометкиРасширеннаяПодсказка" id="118"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаСнятьПометки" id="119">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСнятьПометки</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаСнятьПометкиРасширеннаяПодсказка" id="120"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаНайти" id="155">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:c0519548-2a9a-44de-a25e-faf01e089d4d</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаНайтиРасширеннаяПодсказка" id="156"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаОтменитьПоиск" id="157">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:44ad3ec9-f3c2-4913-9224-5f9fb6418743</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКонтекстноеМенюКнопкаОтменитьПоискРасширеннаяПодсказка" id="158"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="ПроводкиКСторнированиюКоманднаяПанель" id="240">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ПроводкиКСторнированиюКнопкаУстановитьПометки" id="113">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаУстановитьПометки</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаУстановитьПометкиРасширеннаяПодсказка" id="114"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКнопкаСнятьПометки" id="115">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСнятьПометки</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаСнятьПометкиРасширеннаяПодсказка" id="116"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКнопкаНайти" id="145">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:c0519548-2a9a-44de-a25e-faf01e089d4d</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаНайтиРасширеннаяПодсказка" id="146"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКнопкаОтменитьПоиск" id="147">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:44ad3ec9-f3c2-4913-9224-5f9fb6418743</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаОтменитьПоискРасширеннаяПодсказка" id="148"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКнопкаСортироватьСписокПоВозрастанию" id="149">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:2bbe4e12-06d2-409b-a972-eea585125d83</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="150"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКнопкаСортироватьСписокПоУбыванию" id="151">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:58b2a785-23f6-4b0e-a324-9a1323285595</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="152"/>
+							</Button>
+							<Button name="ПроводкиКСторнированиюКнопкаВывестиСписок" id="153">
+								<Type>CommandBarButton</Type>
+								<CommandName>3:49602716-fea6-497f-8047-726404038857</CommandName>
+								<ExtendedTooltip name="ПроводкиКСторнированиюКнопкаВывестиСписокРасширеннаяПодсказка" id="154"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПроводкиКСторнированиюРасширеннаяПодсказка" id="241"/>
+					<SearchStringAddition name="ПроводкиКСторнированиюСтрокаПоиска" id="242">
+						<AdditionSource>
+							<Item>ПроводкиКСторнированию</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПроводкиКСторнированиюСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ПроводкиКСторнированиюСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПроводкиКСторнированиюСостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>ПроводкиКСторнированию</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПроводкиКСторнированиюСостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ПроводкиКСторнированиюСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПроводкиКСторнированиюУправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>ПроводкиКСторнированию</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПроводкиКСторнированиюУправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ПроводкиКСторнированиюУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="ПроводкиКСторнированиюПометка" id="19">
+							<DataPath>Отчет.ПроводкиКСторнированию.Пометка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>П.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПроводкиКСторнированиюПометкаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюПометкаРасширеннаяПодсказка" id="21"/>
+						</CheckBoxField>
+						<LabelField name="ПроводкиКСторнированиюНомерСтроки" id="16">
+							<DataPath>Отчет.ПроводкиКСторнированию.LineNumber</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПроводкиКСторнированиюНомерСтрокиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюНомерСтрокиРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаПериод" id="121">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаПериодРасширеннаяПодсказка" id="122"/>
+							<ChildItems>
+								<InputField name="ПроводкиКСторнированиюПериод" id="22">
+									<DataPath>Отчет.ПроводкиКСторнированию.Период</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюПериодКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюПериодРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="ПроводкиКСторнированиюРегистратор" id="25">
+									<DataPath>Отчет.ПроводкиКСторнированию.Регистратор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюРегистраторКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюРегистраторРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ПроводкиКСторнированиюОрганизация" id="28">
+							<DataPath>Отчет.ПроводкиКСторнированию.Организация</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПроводкиКСторнированиюОрганизацияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюОрганизацияРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="ПроводкиКСторнированиюСчетДт" id="31">
+							<DataPath>Отчет.ПроводкиКСторнированию.СчетДт</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПроводкиКСторнированиюСчетДтКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюСчетДтРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаСубконтоДт" id="123">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Субконто Дт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Субконто Дт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаСубконтоДтРасширеннаяПодсказка" id="124"/>
+							<ChildItems>
+								<ColumnGroup name="ПроводкиКСторнированиюГруппаВидыСубконтоДт" id="125">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды Субконто Дт</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды Субконто Дт</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПроводкиКСторнированиюГруппаВидыСубконтоДтРасширеннаяПодсказка" id="126"/>
+									<ChildItems>
+										<InputField name="ПроводкиКСторнированиюВидСубконтоДт1" id="34">
+											<DataPath>Отчет.ПроводкиКСторнированию.ВидСубконтоДт1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюВидСубконтоДт1КонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюВидСубконтоДт1РасширеннаяПодсказка" id="36"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюВидСубконтоДт2" id="40">
+											<DataPath>Отчет.ПроводкиКСторнированию.ВидСубконтоДт2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюВидСубконтоДт2КонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюВидСубконтоДт2РасширеннаяПодсказка" id="42"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюВидСубконтоДт3" id="46">
+											<DataPath>Отчет.ПроводкиКСторнированию.ВидСубконтоДт3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюВидСубконтоДт3КонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюВидСубконтоДт3РасширеннаяПодсказка" id="48"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПроводкиКСторнированиюГруппаЗначенияСубконтоДт" id="127">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значения Субконто Дт</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значения Субконто Дт</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПроводкиКСторнированиюГруппаЗначенияСубконтоДтРасширеннаяПодсказка" id="128"/>
+									<ChildItems>
+										<InputField name="ПроводкиКСторнированиюСубконтоДт1" id="37">
+											<DataPath>Отчет.ПроводкиКСторнированию.СубконтоДт1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюСубконтоДт1КонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюСубконтоДт1РасширеннаяПодсказка" id="39"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюСубконтоДт2" id="43">
+											<DataPath>Отчет.ПроводкиКСторнированию.СубконтоДт2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюСубконтоДт2КонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюСубконтоДт2РасширеннаяПодсказка" id="45"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюСубконтоДт3" id="49">
+											<DataPath>Отчет.ПроводкиКСторнированию.СубконтоДт3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюСубконтоДт3КонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюСубконтоДт3РасширеннаяПодсказка" id="51"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ПроводкиКСторнированиюКоличествоДт" id="52">
+							<DataPath>Отчет.ПроводкиКСторнированию.КоличествоДт</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПроводкиКСторнированиюКоличествоДтКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюКоличествоДтРасширеннаяПодсказка" id="54"/>
+						</InputField>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаВалютаДт" id="129">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта Дт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта Дт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаВалютаДтРасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<InputField name="ПроводкиКСторнированиюВалютаДт" id="55">
+									<DataPath>Отчет.ПроводкиКСторнированию.ВалютаДт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюВалютаДтКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюВалютаДтРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ПроводкиКСторнированиюВалютнаяСуммаДт" id="58">
+									<DataPath>Отчет.ПроводкиКСторнированию.ВалютнаяСуммаДт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюВалютнаяСуммаДтКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюВалютнаяСуммаДтРасширеннаяПодсказка" id="60"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаДтНУ" id="131">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дт (НУ)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дт (Налоговый учет) </v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаДтНУРасширеннаяПодсказка" id="132"/>
+							<ChildItems>
+								<InputField name="ПроводкиКСторнированиюНалоговоеНазначениеДт" id="61">
+									<DataPath>Отчет.ПроводкиКСторнированию.НалоговоеНазначениеДт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюНалоговоеНазначениеДтКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюНалоговоеНазначениеДтРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<InputField name="ПроводкиКСторнированиюСуммаНУДт" id="64">
+									<DataPath>Отчет.ПроводкиКСторнированию.СуммаНУДт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюСуммаНУДтКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюСуммаНУДтРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ПроводкиКСторнированиюСчетКт" id="67">
+							<DataPath>Отчет.ПроводкиКСторнированию.СчетКт</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПроводкиКСторнированиюСчетКтКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюСчетКтРасширеннаяПодсказка" id="69"/>
+						</InputField>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаСубконтоКт" id="133">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Субконто Кт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Субконто кт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаСубконтоКтРасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<ColumnGroup name="ПроводкиКСторнированиюГруппаВидыСубконтоКт" id="135">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды Субконто Кт</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды Субконто Кт</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПроводкиКСторнированиюГруппаВидыСубконтоКтРасширеннаяПодсказка" id="136"/>
+									<ChildItems>
+										<InputField name="ПроводкиКСторнированиюВидСубконтоКт1" id="70">
+											<DataPath>Отчет.ПроводкиКСторнированию.ВидСубконтоКт1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюВидСубконтоКт1КонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюВидСубконтоКт1РасширеннаяПодсказка" id="72"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюВидСубконтоКт2" id="76">
+											<DataPath>Отчет.ПроводкиКСторнированию.ВидСубконтоКт2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюВидСубконтоКт2КонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюВидСубконтоКт2РасширеннаяПодсказка" id="78"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюВидСубконтоКт3" id="82">
+											<DataPath>Отчет.ПроводкиКСторнированию.ВидСубконтоКт3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюВидСубконтоКт3КонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюВидСубконтоКт3РасширеннаяПодсказка" id="84"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПроводкиКСторнированиюГруппаЗначенияСубконтоКт" id="137">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значения Субконто Кт</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значения Субконто Кт</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПроводкиКСторнированиюГруппаЗначенияСубконтоКтРасширеннаяПодсказка" id="138"/>
+									<ChildItems>
+										<InputField name="ПроводкиКСторнированиюСубконтоКт1" id="73">
+											<DataPath>Отчет.ПроводкиКСторнированию.СубконтоКт1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюСубконтоКт1КонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюСубконтоКт1РасширеннаяПодсказка" id="75"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюСубконтоКт2" id="79">
+											<DataPath>Отчет.ПроводкиКСторнированию.СубконтоКт2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюСубконтоКт2КонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюСубконтоКт2РасширеннаяПодсказка" id="81"/>
+										</InputField>
+										<InputField name="ПроводкиКСторнированиюСубконтоКт3" id="85">
+											<DataPath>Отчет.ПроводкиКСторнированию.СубконтоКт3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПроводкиКСторнированиюСубконтоКт3КонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="ПроводкиКСторнированиюСубконтоКт3РасширеннаяПодсказка" id="87"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ПроводкиКСторнированиюКоличествоКт" id="88">
+							<DataPath>Отчет.ПроводкиКСторнированию.КоличествоКт</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПроводкиКСторнированиюКоличествоКтКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="ПроводкиКСторнированиюКоличествоКтРасширеннаяПодсказка" id="90"/>
+						</InputField>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаВалютаКт" id="139">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта Кт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта Кт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаВалютаКтРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<InputField name="ПроводкиКСторнированиюВалютаКт" id="91">
+									<DataPath>Отчет.ПроводкиКСторнированию.ВалютаКт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюВалютаКтКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюВалютаКтРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="ПроводкиКСторнированиюВалютнаяСуммаКт" id="94">
+									<DataPath>Отчет.ПроводкиКСторнированию.ВалютнаяСуммаКт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюВалютнаяСуммаКтКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюВалютнаяСуммаКтРасширеннаяПодсказка" id="96"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаКтНУ" id="141">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кт (НУ)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кт (Налоговый учет)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаКтНУРасширеннаяПодсказка" id="142"/>
+							<ChildItems>
+								<InputField name="ПроводкиКСторнированиюНалоговоеНазначениеКт" id="97">
+									<DataPath>Отчет.ПроводкиКСторнированию.НалоговоеНазначениеКт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюНалоговоеНазначениеКтКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюНалоговоеНазначениеКтРасширеннаяПодсказка" id="99"/>
+								</InputField>
+								<InputField name="ПроводкиКСторнированиюСуммаНУКт" id="100">
+									<DataPath>Отчет.ПроводкиКСторнированию.СуммаНУКт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюСуммаНУКтКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюСуммаНУКтРасширеннаяПодсказка" id="102"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ПроводкиКСторнированиюГруппаСумма" id="143">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПроводкиКСторнированиюГруппаСуммаРасширеннаяПодсказка" id="144"/>
+							<ChildItems>
+								<InputField name="ПроводкиКСторнированиюСумма" id="103">
+									<DataPath>Отчет.ПроводкиКСторнированию.Сумма</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюСуммаКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюСуммаРасширеннаяПодсказка" id="105"/>
+								</InputField>
+								<InputField name="ПроводкиКСторнированиюСодержание" id="106">
+									<DataPath>Отчет.ПроводкиКСторнированию.Содержание</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроводкиКСторнированиюСодержаниеКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ПроводкиКСторнированиюСодержаниеРасширеннаяПодсказка" id="108"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="234">
+			<Type>
+				<v8:Type>cfg:ExternalReportObject.ФормированиеСторноПроводок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Результат" id="236">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Result</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеРасшифровки" id="238">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаУстановитьПометки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда установить пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаУстановитьПометки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСнятьПометки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда снять пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСнятьПометки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСформироватьСторно" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать сторно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать сторно (без заполнения таблицы проводок)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСформироватьСторно</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОтобратьВТаблицу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать в таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать в таблицу проводок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтобратьВТаблицу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСформироватьСторноПоТаблице" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать сторно по таблице</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сформировать сторно по таблице</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСформироватьСторноПоТаблице</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаПоказатьНастройки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать настройки (отбор, сортировка)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionFilter</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПоказатьНастройки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаПоказатьПроводки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать проводки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать проводки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПоказатьПроводки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
