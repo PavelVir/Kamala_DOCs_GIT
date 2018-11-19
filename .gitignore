@@ -1,3 +1,4 @@
 -$*.docx
 *.png
 *.bin
+.commit-amend-markdown
