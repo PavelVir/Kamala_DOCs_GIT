@@ -107,7 +107,7 @@
 {0},7,1,0,00000000-0000-0000-0000-000000000000},
 {1,0},0,0,100,0,0},9,2,0,2,0,1,
 {5,e90d7cdc-eee1-4e8b-876d-af6f91879c3d,3,1,3,
-{6,65a85b35-5de7-4336-99ba-e94d00ac37ab,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,3f2617ca-25b4-46ba-a283-24c9474f9ef7,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаВыполнитьНажатие",
 {1,"КнопкаВыполнитьНажатие",
 {1,2,
@@ -146,19 +146,19 @@ S+3W0u19917f/VQFOz5f0CummCT+xchZa3sUfd3wka8X9I4/fgON+TR7PCxMcAAA
 AABJRU5ErkJggg==}
 },0,""}
 },
-{6,c200ded1-cf1a-4826-b307-9cb3fd350a2e,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,c0eba3b9-eddf-41a1-aac3-1083feab57cd,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,816e4dee-ed53-4ca5-a8d9-9094b0073ecc,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
+{6,3bc7ff6e-f9f4-468d-a906-d3fdc69a133b,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
 {6,1,00000000-0000-0000-0000-000000000000,142,
 {1,0,357c6a54-357d-425d-a2bd-22f4f6e86c87,2147483647,0},0,1},0},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,65a85b35-5de7-4336-99ba-e94d00ac37ab,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,3f2617ca-25b4-46ba-a283-24c9474f9ef7,
 {8,"ОсновныеДействияФормыВыполнить",0,1,
 {1,2,
 {"ru","Выполнить"},
 {"uk","Виконати"}
-},1,e90d7cdc-eee1-4e8b-876d-af6f91879c3d,1,1e2,0,3,1,0,0,0,0},c200ded1-cf1a-4826-b307-9cb3fd350a2e,
+},1,e90d7cdc-eee1-4e8b-876d-af6f91879c3d,1,1e2,0,3,1,0,0,0,0},c0eba3b9-eddf-41a1-aac3-1083feab57cd,
 {8,"Разделитель",0,1,
-{1,0},0,e90d7cdc-eee1-4e8b-876d-af6f91879c3d,2,1e2,2,1,1,0,0,0,0},816e4dee-ed53-4ca5-a8d9-9094b0073ecc,
+{1,0},0,e90d7cdc-eee1-4e8b-876d-af6f91879c3d,2,1e2,2,1,1,0,0,0,0},3bc7ff6e-f9f4-468d-a906-d3fdc69a133b,
 {8,"ОсновныеДействияФормыЗакрыть",0,1,
 {1,2,
 {"ru","Закрыть"},
@@ -168,7 +168,7 @@ AABJRU5ErkJggg==}
 {0}
 }
 }
-},b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,38eb1621-c00f-4454-a810-2fd9f9fba267,1,0,0}
+},b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,dd98cf2f-6e7a-4258-badb-a209228c8493,1,0,0}
 },
 {8,0,343,328,368,1,
 {0,
@@ -231,7 +231,7 @@ AABJRU5ErkJggg==}
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0,100,0,0},
+{1,0},0,0,100,2,0},
 {19,16981537,
 {3,4,
 {0}
@@ -302,11 +302,11 @@ AABJRU5ErkJggg==}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj/hOZHspG2SXyAhHlCgKwPqVuVl
-DDyJB7CQ2KVACySRnDuf43Pu6xWv2+U6BFUWA2zavu/OJ2CwhVgWMV/lUKMoI6uq
-HPCZnWOnrMIkJcSYLqywOWhjftUssVS4OWHoxbAbTT53SZtZUigwdRfSomARqSWq
-xCTsIE4R4EOU6FGFnNOUT86DFP3JTi98MflmqHHOGarV9EU8XWhdU9mj0RS6oKu6
-M9r7YLXxuD8ECnUbnPSfT4AyA//o+CI3JTEjFuID},0},0,0,0},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj+R2ZHspG2SXyAhHlCgKwPqVuVl
+DDyJB7CQ2KVACySR7LPP9jn39YrP7XIdApTFoDZt33fnk2KwVbEsYnblUQOUkYUq
+G3xm59iBBUxUQozJYYbNRhvzq2aJpcLNA4ZeEVajyecp6XKUAAWm6cDAomAhwRJV
+IlLtVJysUh+kFB5ZyDlN+eW8kqI/2anDF5FvghrnnKEapv14u9C6prJHoyl0QVd1
+Z7T3wWrjcX8IFOo2OJk/3wBlB/7RsSMPJREjEuID},0},0,0,0},
 {-1},
 {-1},
 {-1}
@@ -355,11 +355,11 @@ M9r7YLXxuD8ECnUbnPSfT4AyA//o+CI3JTEjFuID},0},0,0,0},
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj/hOZHspG2SXyAhHlCgKwPqVuVl
-DDyJB7CQ2KVACySRnDuf43Pu6xWv2+U6BFUWA2zavu/OJ2CwhVgWMV/lUKMoI6uq
-HPCZnWOnrMIkJcSYLqywOWhjftUssVS4OWHoxbAbTT53SZtZUigwdRfSomARqSWq
-xCTsIE4R4EOU6FGFnNOUT86DFP3JTi98MflmqHHOGarV9EU8XWhdU9mj0RS6oKu6
-M9r7YLXxuD8ECnUbnPSfT4AyA//o+CI3JTEjFuID},0},0,0,0},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj+R2ZHspG2SXyAhHlCgKwPqVuVl
+DDyJB7CQ2KVACySR7LPP9jn39YrP7XIdApTFoDZt33fnk2KwVbEsYnblUQOUkYUq
+G3xm59iBBUxUQozJYYbNRhvzq2aJpcLNA4ZeEVajyecp6XKUAAWm6cDAomAhwRJV
+IlLtVJysUh+kFB5ZyDlN+eW8kqI/2anDF5FvghrnnKEapv14u9C6prJHoyl0QVd1
+Z7T3wWrjcX8IFOo2OJk/3wBlB/7RsSMPJREjEuID},0},0,0,0},
 {-1},
 {-1},
 {-1}
@@ -452,7 +452,7 @@ M9r7YLXxuD8ECnUbnPSfT4AyA//o+CI3JTEjFuID},0},0,0,0},
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0,100,0,0},18,0,0,
+{1,0},0,0,100,0,0},19,0,0,
 {8,0,
 {4,3,
 {0},"",-1,-1,0,
@@ -469,7 +469,7 @@ AABJRU5ErkJggg==}
 {4,0,
 {0},"",-1,-1,1,0,""},100,0,0,0},
 {0,0,0},1,1,0,0,
-{1,0},0,1},
+{1,0},0,1,0},
 {0}
 },
 {8,16,280,40,304,0,
@@ -530,7 +530,7 @@ AABJRU5ErkJggg==}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0,100,0,0},18,0,0,
+{1,0},0,0,100,0,0},19,0,0,
 {8,0,
 {4,3,
 {0},"",-1,-1,0,
@@ -547,7 +547,7 @@ Cg1Hay1tgQVbSMi+XpRSVi6fgEmIWMAMMXbsn4W7E/LikZBRa7bVfYelpcvsnAmL
 {4,0,
 {0},"",-1,-1,1,0,""},100,0,0,0},
 {0,0,0},1,1,0,0,
-{1,0},0,1},
+{1,0},0,1,0},
 {0}
 },
 {8,48,280,72,304,0,
@@ -610,7 +610,7 @@ Cg1Hay1tgQVbSMi+XpRSVi6fgEmIWMAMMXbsn4W7E/LikZBRa7bVfYelpcvsnAmL
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0,100,0,0},9,2,0,0,1,1,
 {5,40e35f97-3376-40b2-adca-561b8cc40daf,3,1,3,
-{6,2a6b79d2-4297-4697-8dd4-f246abf5767d,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,45c4a3b0-796e-468d-a561-814b84295743,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияРазвернутьДерево",
 {1,"ДействияРазвернутьДерево",
 {1,2,
@@ -709,7 +709,7 @@ ocZjvM61idnVNFFi/bKraR7mXWXV8oqXT3omj/WB50kYUzQtk6Tn+NT+xv8BAPjj
 pVmPVgMIAAAAAElFTkSuQmCC}
 },0,""}
 },
-{6,d7f26dfc-fb6f-487c-892f-7098624d1d8f,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,d2f1a4b5-6026-4845-9eb8-10f7cf71b6d1,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияСвернутьДерево",
 {1,"ДействияСвернутьДерево",
 {1,2,
@@ -804,19 +804,19 @@ MHgXeC6U44e9wG1soAuVLHfM25x/ewBdqAR8HGAETF/TlhpQxpja+f8CzwEABw4x
 LQ4c4vYAAAAASUVORK5CYII=}
 },0,""}
 },
-{6,e2f26178-0d1f-470d-aa04-f681f8ffd36f,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,af0f96fb-a6e8-4250-96f0-ab26acea8663,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,2a6b79d2-4297-4697-8dd4-f246abf5767d,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,45c4a3b0-796e-468d-a561-814b84295743,
 {8,"РазвернутьДерево",0,1,
 {1,2,
 {"ru","Развернуть дерево"},
 {"uk","Розкрити дерево"}
-},1,40e35f97-3376-40b2-adca-561b8cc40daf,1,1e2,0,0,1,0,0,0,0},d7f26dfc-fb6f-487c-892f-7098624d1d8f,
+},1,40e35f97-3376-40b2-adca-561b8cc40daf,1,1e2,0,0,1,0,0,0,0},d2f1a4b5-6026-4845-9eb8-10f7cf71b6d1,
 {8,"СвернутьДерево",0,1,
 {1,2,
 {"ru","Свернуть дерево"},
 {"uk","Згорнути дерево"}
-},1,40e35f97-3376-40b2-adca-561b8cc40daf,3,1e2,0,0,1,0,0,0,0},e2f26178-0d1f-470d-aa04-f681f8ffd36f,
+},1,40e35f97-3376-40b2-adca-561b8cc40daf,3,1e2,0,0,1,0,0,0,0},af0f96fb-a6e8-4250-96f0-ab26acea8663,
 {8,"Разделитель",0,1,
 {1,1,
 {"ru","Действие"}
@@ -857,7 +857,7 @@ LQ4c4vYAAAAASUVORK5CYII=}
 {0}
 }
 }
-},328,368,1,1,1,8,8,80,328,368,96},
+},328,368,1,1,1,8,8,81,328,368,96},
 {
 {0},2,
 {2,
